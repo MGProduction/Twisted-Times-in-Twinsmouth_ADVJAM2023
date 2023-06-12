@@ -1,5 +1,5 @@
 # Twisted-Times-in-Twinsmouth
-The Twisted Times in Twinsmouth (my #advjam2023 entry) is a point-and-click pixel-art game #madewithdefold [https://defold.com/]
+**Twisted Times in Twinsmouth** (my #advjam2023 entry) is a point-and-click pixel-art game #madewithdefold [https://defold.com/]
 
 Offcial page: [https://marcogiorgini.itch.io/twisted-times-in-twinsmouth]
 
@@ -10,4 +10,4 @@ The **graphic** and the **game script** is released under a **Creative Commons A
 
 The **fonts** have their specific license in font folder (licenses are permissive, but check them - you can easily change fonts if they don't fit your needs)
 
-The **music** (by Andrea Baroni @bluegestalt) CANNOT be released or distributed. It can be used only to run this game for personal usage (you cannot use this game music for ANY reason)
+The **music** (by **Andrea Baroni** @bluegestalt) **CANNOT** be released or distributed. It can be used only to run this game for personal usage (you cannot use this game music for ANY reason)
