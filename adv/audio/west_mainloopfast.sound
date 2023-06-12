@@ -1,0 +1,4 @@
+sound: "/adv/audio/west_mainloopfast.ogg"
+looping: 1
+group: "master"
+gain: 1.0

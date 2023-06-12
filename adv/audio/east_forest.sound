@@ -1,0 +1,4 @@
+sound: "/adv/audio/east_forest.ogg"
+looping: 1
+group: "master"
+gain: 1.0

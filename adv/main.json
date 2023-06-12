@@ -1,0 +1,5165 @@
+{
+"general":[{
+		"name":"Twisted Times in Twinsmouth",
+		"version":"1.1.0",
+		"height":"200",
+		"winwidth":"980",
+		"winheight":"736",
+		"language":"en",
+		"package":"com.marcogiorgini.twinsmouth",
+		"font":"pixelfont.font|smallpixelfont.font|nokiafc22.ttf|alterebro-pixel-font.ttf|statusfont.font|titlefont.font|subtitlefont.font|GREALN__.ttf",
+		"filter":"none",
+		"fixedsize":"0",
+		"fullscreen":"0",
+		"bkgalign":"top",
+		"usefrontanim":"0",
+		"musicselector":"_lofi",
+		"app_icon":"ttt",
+		"files":"README.txt,WALKTHROUGH.txt",
+		"_autosave":"7"
+}],"config":[{
+		"starting":"home",
+		"playas":"marco",
+		"basetask":"_",
+		"baseset":"_",
+		"basemet":"_",
+		"basevisited":"_",
+		"basecharacters":"_"
+}],"debugconfig":[{
+		"starting":"home",
+		"playas":"marco",
+		"basetask":"_",
+		"baseset":"_",
+		"basemet":"_",
+		"basevisited":"_",
+		"basecharacters":"_",
+		"baseinventory":"_"
+}],"dlgs":[{
+"pause":[{
+			"title":"1",
+			"body":[
+				{"2":"go_back"},
+				{"3":"load"},
+				{"4":"save"},
+				{"5":"options"},
+				{"6":"quit"}
+]}],
+"quit":[{
+			"title":"7",
+			"body":[
+				{"8":"go_quit"},
+				{"9":"go_back"}
+]}],
+"options":[{
+			"title":"5",
+			"body":[
+				{"10":"audio"},
+				{"11":"go_toggle_fullscreen"},
+				{"12":"textspeed"},
+				{"13":"mousebuttons"},
+				{"14":"skippro"},
+				{"15":"go_back"}
+]}],
+"setlanguage":[{
+			"title":"16",
+			"body":[
+				{"17":"go_language::en"},
+				{"18":"go_language::it"},
+				{"15":"go_back"}
+]}],
+"done":[{
+			"title":"19",
+			"body":[
+				{"15":"go_back"}
+]}],
+"load":[{
+			"title":"20",
+			"body":[
+				{"$slot1":"go_load::1"},
+				{"$slot2":"go_load::2"},
+				{"$slot3":"go_load::3"},
+				{"$slot4":"go_load::4"},
+				{"$slot5":"go_load::5"},
+				{"21":"go_back"}
+]}],
+"save":[{
+			"title":"22",
+			"body":[
+				{"$slot1":"go_save::1"},
+				{"$slot2":"go_save::2"},
+				{"$slot3":"go_save::3"},
+				{"$slot4":"go_save::4"},
+				{"$slot5":"go_save::5"},
+				{"21":"go_back"}
+]}],
+"credits":[{
+			"title":"23",
+			"body":[
+				{"24":"$title"},
+				{"25":"$title"},
+				{"26":"$title"},
+				{"27":"$text"},
+				{"28":"$title"},
+				{"29":"$text"},
+				{"30":"$title"},
+				{"31":"$text"},
+				{"32":"credits2"},
+				{"15":"go_back"}
+]}],
+"credits3":[{
+			"title":"23",
+			"body":[
+				{"28":"$title"},
+				{"33":"$text"},
+				{"32":"credits3"},
+				{"15":"go_back"}
+]}],
+"credits2":[{
+			"title":"23",
+			"body":[
+				{"34":"$title"},
+				{"35":"$text"},
+				{"36":"$title"},
+				{"37":"$text"},
+				{"15":"go_back"}
+]}],
+"textspeed":[{
+			"title":"12",
+			"body":[
+				{"38":"go_textspeed::0.5"},
+				{"39":"go_textspeed::1"},
+				{"40":"go_textspeed::1.5"},
+				{"41":"go_textspeed::10"},
+				{"15":"go_back"}
+]}],
+"audio":[{
+			"title":"10",
+			"body":[
+				{"42":"go_toggle_music"},
+				{"43":"go_toggle_sound"},
+				{"15":"go_back"}
+]}],
+"mousebuttons":[{
+			"title":"44",
+			"body":[
+				{"45":"go_mousebuttons::left"},
+				{"46":"go_mousebuttons::right"},
+				{"15":"go_back"}
+]}],
+"skipprologue":[{
+			"title":"47",
+			"body":[
+				{"8":"go_loadroom::east_fpath"},
+				{"9":"go_loadroom::prologue_title"},
+				{"15":"go_back"}
+]}],
+"skippro":[{
+			"title":"48",
+			"body":[
+				{"8":"go_setconfig::seenprologue,1"},
+				{"9":"go_setconfig::seenprologue,0"},
+				{"15":"go_back"}
+]}]}],"hud":[{
+		"short":"0",
+		"_slotprefix":"slot_",
+		"cursor":"cursor.ase",
+		"dlg.frame.body":"icon_24x20",
+		"dlg.frame.title":"icon_24x20_brd",
+"bar_top":[{
+			"icon":"inventory_bar",
+			"anchor":"top",
+			"size":"0,20"
+}],
+"bar_bottom":[{
+			"icon":"inventory_bar",
+			"anchor":"bottom",
+			"size":"0,20"
+}],
+"btn_pause":[{
+			"icon":"icon_pause",
+			"anchor":"topright",
+			"size":"13,13"
+}],
+"btn_invleft":[{
+			"icon":"icon_left",
+			"anchor":"inventory_left",
+			"size":"13,20"
+}],
+"btn_invright":[{
+			"icon":"icon_right",
+			"anchor":"inventory_right",
+			"size":"13,20"
+}],
+"inventory":[{
+			"anchor":"bottomright+13",
+			"cnticons":"cnt.ase",
+"grid":[{
+				"rows":"1",
+				"columns":"7"
+			}],
+"size":"24,20",
+"blank":[{
+				"icon":"icon_24x20"
+			}],
+"scroll":"H"
+}],
+"actorselector":[{
+			"anchor":"bottomleft",
+"grid":[{
+				"rows":"1",
+				"columns":"2"
+			}],
+"size":"24,20",
+"blank":[{
+				"icon":"icon_24x20_select",
+				"selecticon":"icon_24x20_hilight"
+}]}],
+"verbs":[{
+			"invertbuttons":"yes",
+			"showmode":"aboveverbs",
+			"ignoreplayer":"yes",
+			"anchor":"bottomleft",
+			"deftext":"49",
+"grid":[{
+				"columns":"0",
+				"rows":"0"
+			}],
+"size":"40,13",
+			"leftclick":"use",
+			"leftclickactors":"talkto",
+			"rightclick":"lookat",
+			"rightclickactors":"lookat",
+			"dragwith":"left",
+			"leftclickinventory":"use",
+			"rightclickinventory":"lookat",
+			"walkto":"50",
+			"switchto":"switch to",
+			"it.defarticle":"_",
+"blank":[{
+				"icon":"cmd_btn"
+			}],
+"_verbicons":"en.cmd.ase,it.cmd.ase",
+"list":[{
+"lookat":[{
+					"pos":"1",
+					"text":"51",
+					"deftext":"52",
+					"reach":"0"
+}],"talkto":[{
+					"pos":"2",
+					"text":"53",
+					"deftext":"54",
+					"acton":"A"
+}],"use":[{
+					"pos":"3",
+					"text":"55",
+					"deftext":"56",
+					"acton":"T",
+					"double":"with",
+					"drag":"1",
+					"reach":"1"
+}]}],"quickuse":[{
+"M":[{
+					"text":"57"
+}],"T":[{
+					"text":"58"
+}],"N":[{
+					"text":"59"
+}],"W":[{
+					"text":"60"
+}],"R":[{
+					"text":"61"
+}],"O":[{
+					"text":"62"
+}],"U":[{
+					"text":"63"
+}]}]}],
+"_button_selector":[{
+			"lefticon":"leftbtn.ase",
+			"righticon":"rightbtn.ase",
+			"size":"24,20",
+			"anchor":"topleft",
+"grid":[{
+				"rows":"1",
+				"columns":"2"
+}]}]}],"actions":[{
+"base":[{
+			"gamestart":[
+				{"unsetroom":"stefy"},
+				{"setroom,stefy":"west_fpath"},
+				{"addcharacter":"marco"},
+				{"addcharacter":"stefy"},
+				{"selcharacter":"marco"}
+],			"stefystart":[
+				{"take":"stefycell"}
+],			"marcostart":[
+				{"take":"marcocell"},
+				{"take":"daninvitation"}
+],			"plantdoorfirst":[
+				{"ifonce":"once_44"},
+				{"say":"1"},
+				{"endif":""}
+],			"halltalkstart":[
+				{"faceto,hplovecraft":"eapoe,lock"},
+				{"faceto,eapoe":"hplovecraft,lock"},
+				{"setanim,eapoe":"talk"},
+				{"setanim,hplovecraft":"talk"}
+],			"halltalkstop":[
+				{"setanim,eapoe":"_"},
+				{"setanim,hplovecraft":"_"}
+],			"loungetalkstart":[
+				{"faceto,jkrowling":"sking,lock"},
+				{"faceto,sking":"jkrowling,lock"},
+				{"setanim,sking":"talk"},
+				{"setanim,jkrowling":"talk"}
+],			"loungetalkstop":[
+				{"setanim,sking":"_"},
+				{"setanim,jkrowling":"_"}
+],			"trekcontalkstart":[
+				{"ifknown":"!fightstarted"},
+				{"faceto,trekker1":"grrmartin,lock"},
+				{"faceto,trekker2":"grrmartin,lock"},
+				{"faceto,grrmartin":"trekker1,lock"},
+				{"setanim,trekker1":"talk"},
+				{"setanim,trekker2":"talk"},
+				{"setanim,grrmartin":"talk"},
+				{"endif":""}
+],			"trekcontalkstop":[
+				{"ifknown":"!fightstarted"},
+				{"setanim,trekker1":"_"},
+				{"setanim,trekker2":"_"},
+				{"setanim,grrmartin":"_"},
+				{"endif":""}
+],			"hallpoe":[
+				{"call":"halltalkstop"},
+				{"say,eapoe,marco":"2"},
+				{"ifknown":"rlstineadvised+grrmartinadvised+jverneadvised+esalgariadvised"},
+				{"say,marco,eapoe":"3"},
+				{"say,eapoe,marco":"4"},
+				{"setroomstatus":"ready"},
+				{"else":""},
+				{"say,marco,eapoe":"5"},
+				{"say,eapoe,marco":"6"},
+				{"ifknown":"rlstineadvised+grrmartinadvised"},
+				{"setroomstatus":"halfready"},
+				{"say,eapoe,hplovecraft":"7"},
+				{"say,eapoe":"8"},
+				{"unsetblock":"eapoe"},
+				{"moveto,eapoe":"230"},
+				{"setstatus":"east_hotellounge,opening"},
+				{"wait":"500"},
+				{"setroom,eapoe":"east_hotellounge,50"},
+				{"setsuffix,eapoe":"drink"},
+				{"wait":"500"},
+				{"setstatus":"east_hotellounge,closed"},
+				{"else":""},
+				{"newdialog":""},
+				{"addline":"9"},
+				{"say,eapoe":"10"},
+				{"say":"11"},
+				{"say,eapoe":"12"},
+				{"playdialog":""},
+				{"endadd":""},
+				{"addline,!once_45":"13"},
+{"learn":"once_45"},
+				{"say,eapoe":"14"},
+				{"say":"15"},
+				{"say,eapoe":"16"},
+				{"say":"17"},
+				{"say,eapoe":"18"},
+				{"say,hplovecraft":"19"},
+				{"playdialog":""},
+				{"endadd":""},
+				{"addline":"20"},
+				{"say,eapoe":"21"},
+				{"deletedialog":""},
+				{"endadd":""},
+				{"playdialog":""},
+				{"call":"halltalkstart"},
+				{"endif":""},
+				{"endif":""}
+],			"monsterseen":[
+				{"say":"22"},
+				{"say,hplovecraft":"23"},
+				{"say":"24"},
+				{"say,eapoe,hplovecraft":"25"},
+				{"say,hplovecraft,eapoe":"26"},
+				{"say,hplovecraft,marco":"27"},
+				{"wait":"1000"},
+				{"setleader,hplovecraft":"me"},
+				{"loadroom":"east_upperroad"}
+],			"fpathtalkstart":[
+				{"faceto,esalgari":"capitano,lock"},
+				{"faceto,capitano":"esalgari,lock"},
+				{"setanim,capitano":"talk"},
+				{"setanim,esalgari":"talk"}
+],			"fpathtalkstop":[
+				{"setanim,esalgari":"_"},
+				{"setanim,capitano":"_"}
+],			"callhotelowner":[
+				{"ifknown":"bathroomtogarden+needkeycode"},
+				{"ifhave":"hotelcard"},
+				{"say,dbrown,stefy":"28"},
+				{"say,stefy,dbrown":"29"},
+				{"setsuffix":"cell"},
+				{"say":"30"},
+				{"setsuffix":"_"},
+				{"say,dbrown":"31"},
+				{"say":"32"},
+				{"setroom,hotelowner":"void"},
+				{"learn":"ownertricked"},
+				{"else":""},
+				{"say":"33"},
+				{"endif":""},
+				{"else":""},
+				{"setsuffix":"cell"},
+				{"say":"34"},
+				{"setsuffix":"_"},
+				{"endif":""}
+],			"mlibrarybookslook":[
+				{"say":"35"},
+				{"say,dbrown":"36"},
+				{"say":"37"}
+],			"mlibrarybooksuse":[
+				{"say,stefy,dbrown":"38"},
+				{"say,dbrown,stefy":"39"},
+				{"playanim,dbrown":"take"},
+				{"setsuffix,dbrown":"examine"},
+				{"say,dbrown,stefy":"40"},
+				{"say":"41"},
+				{"newdialog":""},
+				{"addline":"42"},
+				{"say,dbrown":"43"},
+				{"say,dbrown":"44"},
+				{"say,dbrown":"45"},
+				{"say,dbrown":"46"},
+				{"say,dbrown":"47"},
+				{"playdialog":""},
+				{"endadd":""},
+				{"addline":"48"},
+				{"say,dbrown":"49"},
+				{"say,dbrown":"50"},
+				{"say,dbrown":"51"},
+				{"say,dbrown":"52"},
+				{"playdialog":""},
+				{"endadd":""},
+				{"addline":"53"},
+				{"say,dbrown":"54"},
+				{"say":"55"},
+				{"say,dbrown":"56"},
+				{"say":"57"},
+				{"say,dbrown":"58"},
+				{"learn":"lucyexistence"},
+				{"learn":"lucyill"},
+				{"playdialog":""},
+				{"endadd":""},
+				{"addline,lucyill":"59"},
+				{"say,dbrown":"60"},
+				{"say":"61"},
+				{"learn":"handburied"},
+				{"say,dbrown":"62"},
+				{"say":"63"},
+				{"playdialog":""},
+				{"endadd":""},
+				{"addline":"64"},
+				{"deletedialog":""},
+				{"endadd":""},
+				{"playdialog":""},
+				{"setsuffix,dbrown":"_"},
+				{"playanim,dbrown":"take"},
+				{"ifknown":"lucyexistence"},
+				{"ifnottaken":"diary"},
+				{"say":"65"},
+				{"playanim":"take"},
+				{"say":"66"},
+				{"take":"diary"},
+				{"endif":""},
+				{"endif":""}
+],			"greetings":[
+				{"say,eapoe,me":"67"},
+				{"newdialog":""},
+				{"addline,!once_46":"68"},
+{"learn":"once_46"},
+				{"say,eapoe":"69"},
+				{"playdialog":""},
+				{"endadd":""},
+				{"addline,!once_47":"70"},
+{"learn":"once_47"},
+				{"say,eapoe":"71"},
+				{"playdialog":""},
+				{"endadd":""},
+				{"addline,!once_48":"72"},
+{"learn":"once_48"},
+				{"say,eapoe":"73"},
+				{"deletedialog":""},
+				{"endadd":""},
+				{"playdialog":""},
+				{"say,eapoe":"74"},
+				{"say":"75"},
+				{"say,eapoe":"76"},
+				{"say":"77"},
+				{"say,eapoe":"78"},
+				{"learn":"collectauthors"},
+				{"unsetblock":"eapoe"},
+				{"moveto,eapoe":"528"},
+				{"setstatus":"east_hotelhall,opening"},
+				{"wait":"500"},
+				{"setroom,eapoe":"east_hotelhall,190"},
+				{"wait":"500"},
+				{"setstatus":"east_hotelhall,closed"}
+],			"plantphone1":[
+				{"ifknown":"speechstefywantpassword+!oncesp1"},
+				{"learn":"oncesp1"},
+				{"say":"79"},
+				{"setsuffix":"cell"},
+				{"say":"80"},
+				{"wait":"500"},
+				{"say,stefy":"81"},
+				{"wait":"500"},
+				{"say":"82"},
+				{"setsuffix":"_"},
+				{"wait":"500"},
+				{"say":"83"},
+				{"wait":"1000"},
+				{"say":"84"},
+				{"learn":"stefywantpassword"},
+				{"learn":"heardback"},
+				{"learn":"messages"},
+				{"endif":""}
+],			"plantphone2":[
+				{"ifknown":"speechsymbolsequencefoundandsent+!oncesp2"},
+				{"learn":"oncesp2"},
+				{"say":"79"},
+				{"setsuffix":"cell"},
+				{"say":"85"},
+				{"say,stefy":"86"},
+				{"say":"87"},
+				{"setsuffix":"_"},
+				{"say":"88"},
+				{"learn":"symbolsequencefoundandsent"},
+				{"learn":"heardback"},
+				{"learn":"messages"},
+				{"endif":""}
+]}],
+"deamon":[{
+			"fishman2":[
+				{"moveto":"862"},
+				{"moveto":"80"}
+]}]}],"actors":[{
+"marco":[{
+			"atlas":"main",
+			"desc":"1",
+			"fulldesc":"1",
+			"saycolor":"7FFFD4",
+			"selecticon":"thumb_marco",
+			"head_animset":"head_",
+			"body_animset":"marco",
+			"shadow":"shadow_main",
+			"size":"50,110",
+"onaction":[{
+			"switchto":[
+					{"selcharacter":"marco"},
+					{"switchto":"marco"}
+]}]}],
+"stefy":[{
+			"atlas":"main",
+			"desc":"2",
+			"fulldesc":"1",
+			"saycolor":"FBCEB1",
+			"selecticon":"thumb_stefania",
+			"shadow":"shadow_main",
+			"head_animset":"head_",
+			"body_animset":"stefania",
+			"size":"50,110",
+"onaction":[{
+			"switchto":[
+					{"selcharacter":"stefy"},
+					{"switchto":"stefy"}
+]}]}],
+"marcohome":[{
+			"atlas":"main",
+			"desc":"1",
+			"fulldesc":"1",
+			"saycolor":"C0C0C0",
+			"head_animset":"head_",
+			"body_animset":"marcohome",
+			"size":"50,110"
+}],
+"dbrown":[{
+			"atlas":"writers",
+			"desc":"3",
+			"shadow":"shadow_writers",
+			"head_animset":"head_",
+			"body_animset":"dbrown",
+			"saycolor":"FFFFF0",
+			"size":"50,110",
+"onaction":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline,!once_49":"89"},
+{"learn":"once_49"},
+					{"say,dbrown,stefy":"90"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!once_50":"91"},
+{"learn":"once_50"},
+					{"say,dbrown,stefy":"92"},
+					{"say":"93"},
+					{"say,dbrown":"94"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"95"},
+					{"say,dbrown,stefy":"96"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,dbrownmansion+!once_51":"97"},
+{"learn":"!once_51"},
+					{"say,dbrown,stefy":"98"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,howworksconnection":"99"},
+					{"say,dbrown,stefy":"100"},
+					{"say":"101"},
+					{"say,dbrown,stefy":"102"},
+					{"say":"103"},
+					{"say,dbrown,stefy":"104"},
+					{"say":"105"},
+					{"say,dbrown":"106"},
+					{"say":"107"},
+					{"say,dbrown":"108"},
+					{"say":"109"},
+					{"say,dbrown":"110"},
+					{"say":"111"},
+					{"say,dbrown":"112"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"20"},
+					{"say,dbrown":"113"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+],			"lookat":[
+					{"say":"114"}
+]}]}],
+"grrmartin":[{
+			"atlas":"writers",
+			"desc":"4",
+			"shadow":"shadow_writers",
+			"head_animset":"head_",
+			"body_animset":"grrmartin",
+			"saycolor":"ABCDEF",
+"onaction":[{
+			"talkto":[
+					{"say,me,grrmartin":"115"},
+					{"say,grrmartin,me":"116"}
+],			"lookat":[
+					{"say":"117"}
+]}]}],
+"jkrowling":[{
+			"atlas":"writers",
+			"desc":"5",
+			"shadow":"shadow_writers",
+			"head_animset":"head_",
+			"body_animset":"jkrowling",
+			"saycolor":"F5F5DC",
+"onaction":[{
+			"talkto":[
+					{"say,me,jkrowling":"118"},
+					{"say,jkrowling,me":"119"}
+],			"lookat":[
+					{"say":"120"}
+]}]}],
+"rlstine":[{
+			"atlas":"writers",
+			"desc":"6",
+			"shadow":"shadow_writers",
+			"head_animset":"head_",
+			"body_animset":"rlstine",
+			"saycolor":"FFFEEF",
+"onaction":[{
+			"talkto":[
+					{"say,me,rlstine":"85"},
+					{"say,rlstine,me":"90"}
+],			"lookat":[
+					{"say":"121"}
+]}]}],
+"sking":[{
+			"atlas":"writers",
+			"desc":"7",
+			"shadow":"shadow_writers",
+			"head_animset":"head_",
+			"body_animset":"stking",
+			"saycolor":"F2F3F4",
+"onaction":[{
+			"talkto":[
+					{"say,me,sking":"118"},
+					{"say,sking,me":"122"}
+],			"lookat":[
+					{"say":"123"}
+]}]}],
+"eapoe":[{
+			"atlas":"oldwriters",
+			"desc":"8",
+			"shadow":"shadow_oldwriters",
+			"head_animset":"head_",
+			"body_animset":"eapoe",
+			"saycolor":"FAEBD7",
+"onaction":[{
+			"talkto":[
+					{"say,me,eapoe":"85"},
+					{"say,eapoe,me":"90"}
+],			"lookat":[
+					{"say":"124"}
+]}]}],
+"esalgari":[{
+			"atlas":"oldwriters",
+			"shadow":"shadow_oldwriters",
+			"desc":"9",
+			"head_animset":"head_",
+			"body_animset":"esalgari",
+			"saycolor":"FEFEE9",
+"onaction":[{
+			"talkto":[
+					{"say,me,esalgari":"85"},
+					{"say,esalgari,me":"90"}
+],			"lookat":[
+					{"say":"125"}
+]}]}],
+"hplovecraft":[{
+			"atlas":"oldwriters",
+			"desc":"10",
+			"shadow":"shadow_oldwriters",
+			"head_animset":"head_",
+			"body_animset":"hplovecraft",
+			"saycolor":"F8F8FF",
+"onaction":[{
+			"talkto":[
+					{"say,me,hplovecraft":"85"},
+					{"say,hplovecraft,me":"90"}
+],			"lookat":[
+					{"say":"126"}
+]}]}],
+"jverne":[{
+			"atlas":"oldwriters",
+			"shadow":"shadow_oldwriters",
+			"desc":"11",
+			"head_animset":"head_",
+			"body_animset":"jverne",
+			"saycolor":"FFFAF0",
+"onaction":[{
+			"talkto":[
+					{"say,me,jverne":"85"},
+					{"say,jverne,me":"90"}
+],			"lookat":[
+					{"say":"127"}
+]}]}],
+"drugstoreclerk":[{
+			"atlas":"townpeople",
+			"desc":"12",
+			"head_animset":"head_",
+			"body_animset":"dclerk",
+			"saycolor":"F5F5F5",
+			"fulldesc":"2",
+"onaction":[{
+			"talkto":[
+					{"say,me,drugstoreclerk":"85"},
+					{"say,drugstoreclerk,me":"128"}
+]}]}],
+"fshopper":[{
+			"atlas":"townpeople",
+			"desc":"13",
+			"head_animset":"head_",
+			"body_animset":"fshopper",
+			"saycolor":"FFDEAD",
+			"fulldesc":"3",
+"onaction":[{
+			"talkto":[
+					{"say,me,fshopper":"85"},
+					{"say,fshopper,me":"128"}
+]}]}],
+"hotelowner":[{
+			"atlas":"townpeople",
+			"desc":"14",
+			"head_animset":"head_",
+			"body_animset":"howner",
+			"saycolor":"FFE4C4",
+			"fulldesc":"4",
+"onaction":[{
+			"talkto":[
+					{"say,me,hotelowner":"85"},
+					{"say,hotelowner,me":"128"}
+]}]}],
+"museumemployee":[{
+			"atlas":"townpeople",
+			"desc":"15",
+			"head_animset":"head_",
+			"body_animset":"memployee",
+			"saycolor":"F0F8FF",
+			"fulldesc":"5",
+"onaction":[{
+			"talkto":[
+					{"say,me,museumemployee":"85"},
+					{"say,museumemployee,me":"128"}
+]}]}],
+"postallady":[{
+			"atlas":"townpeople",
+			"desc":"16",
+			"head_animset":"head_",
+			"body_animset":"plady",
+			"saycolor":"1E90FF",
+			"fulldesc":"6",
+"onaction":[{
+			"talkto":[
+					{"say,me,postallady":"85"},
+					{"say,postallady,me":"128"}
+]}]}],
+"professor":[{
+			"atlas":"townpeople",
+			"desc":"17",
+			"head_animset":"head_",
+			"body_animset":"professor",
+			"saycolor":"B0E0E6",
+			"fulldesc":"7",
+"onaction":[{
+			"talkto":[
+					{"say,me,professor":"85"},
+					{"say,professor,me":"129"}
+]}]}],
+"capitano":[{
+			"desc":"18",
+			"shadow":"shadow",
+			"head_animset":"head_",
+			"body_animset":"capitano",
+			"saycolor":"F0DC82",
+			"fulldesc":"8"
+}],
+"dhan":[{
+			"desc":"19",
+			"shadow":"shadow",
+			"head_animset":"head_",
+			"body_animset":"dhan",
+			"saycolor":"D8BFD8",
+			"fulldesc":"9"
+}],
+"fishman1":[{
+			"desc":"20",
+			"shadow":"shadow",
+			"head_animset":"head_",
+			"body_animset":"fishman",
+			"saycolor":"#4b5320",
+			"fulldesc":"10",
+"onaction":[{
+			"talkto":[
+					{"say,fishman1":"130"}
+]}]}],
+"fishman2":[{
+			"desc":"20",
+			"shadow":"shadow",
+			"head_animset":"head_",
+			"body_animset":"fishman",
+			"saycolor":"#4b5320",
+			"fulldesc":"10",
+"onaction":[{
+			"talkto":[
+					{"say,fishman2":"131"}
+]}]}],
+"fishman3":[{
+			"desc":"20",
+			"shadow":"shadow",
+			"head_animset":"head_",
+			"body_animset":"fishman",
+			"saycolor":"#4b5320",
+			"fulldesc":"10",
+"onaction":[{
+			"talkto":[
+					{"say,fishman3":"132"}
+]}]}],
+"fishman4":[{
+			"desc":"20",
+			"shadow":"shadow",
+			"head_animset":"head_",
+			"body_animset":"fishman",
+			"saycolor":"#4b5320",
+			"fulldesc":"10",
+"onaction":[{
+			"talkto":[
+					{"say,fishman4":"130"}
+]}]}],
+"luigi":[{
+			"desc":"21",
+			"body_animset":"luigiguido",
+			"head_animset":"head_",
+			"shadow":"shadow",
+			"saycolor":"ACE1AF",
+			"fulldesc":"11"
+}],
+"luigison":[{
+			"desc":"22",
+			"body_animset":"luigison",
+			"head_animset":"head_",
+			"shadow":"shadow",
+			"fulldesc":"12"
+}],
+"luigiwife":[{
+			"desc":"23",
+			"body_animset":"luigiwife",
+			"head_animset":"head_",
+			"shadow":"shadow",
+			"fulldesc":"12"
+}],
+"puppet":[{
+			"status":"normal",
+			"desc":"24",
+			"shadow":"shadow_puppet",
+			"saycolor":"99CBFF",
+			"body_animset":"puppet",
+			"head_animset":"head_",
+"onaction":[{
+			"talkto":[
+					{"say":"85"}
+],			"usewith_wand":[
+					{"reach":"puppet"},
+					{"faceto":"puppet"},
+					{"ifleader,puppet":"marco"},
+					{"say":"133"},
+					{"say":"134"},
+					{"setleader,puppet":"_"},
+					{"else":""},
+					{"say":"135"},
+					{"reach,puppet":"marco"},
+					{"say":"136"},
+					{"setleader,puppet":"me"},
+					{"endif":""}
+],			"usewith_curryleaves":[
+					{"say":"137"},
+					{"moveto":"puppet"},
+					{"playanim":"take"},
+					{"drop":"curryleaves"},
+					{"setstatus":"puppet,full"},
+					{"say":"138"}
+],			"usewith_curryoil":[
+					{"say":"139"}
+],			"usewith_awl":[
+					{"say":"140"}
+],			"usewith_novel":[
+					{"say":"141"},
+					{"moveto":"puppet"},
+					{"playanim":"take"},
+					{"drop":"novel"},
+					{"say":"142"}
+				]
+}],"onstatus":[{
+			"normal":[
+					{"fulldesc":"13"}
+],			"filled":[
+					{"fulldesc":"14"}
+]}]}],
+"trekker1":[{
+			"desc":"25",
+			"shadow":"shadow",
+			"head_animset":"head_",
+			"body_animset":"trekker3",
+			"saycolor":"fb6767",
+			"fulldesc":"15",
+"onaction":[{
+			"talkto":[
+					{"say,me,trekker1":"85"},
+					{"say,trekker1,me":"90"}
+]}]}],
+"trekker2":[{
+			"desc":"25",
+			"shadow":"shadow",
+			"head_animset":"head_",
+			"body_animset":"trekker2",
+			"saycolor":"fb6767",
+			"fulldesc":"15",
+"onaction":[{
+			"talkto":[
+					{"say,me,trekker2":"85"},
+					{"say,trekker2,me":"90"}
+]}]}],
+"trekker3":[{
+			"desc":"25",
+			"shadow":"shadow",
+			"head_animset":"head_",
+			"body_animset":"trekker",
+			"saycolor":"fb6767",
+			"fulldesc":"15",
+"onaction":[{
+			"talkto":[
+					{"say,me,trekker3":"85"},
+					{"say,trekker3,me":"90"}
+]}]}]}],"objects":[{
+"awl":[{
+			"desc":"26",
+			"icon":"obj_awl",
+			"fulldesc":"16",
+			"usewith":"yes",
+"onaction":[{
+			"usewith_all":[
+					{"say":"143"}
+]}]}],
+"boatkey":[{
+			"desc":"27",
+			"fulldesc":"17",
+			"icon":"obj_boatkey",
+			"usewith":"yes"
+}],
+"chilli":[{
+			"desc":"28",
+			"icon":"obj_chilli",
+			"fulldesc":"18",
+			"usewith":"yes"
+}],
+"crystalsneakers":[{
+			"desc":"29",
+			"icon":"obj_crystalsneakers",
+			"fulldesc":"19"
+}],
+"curryleaves":[{
+			"desc":"30",
+			"icon":"obj_curryleaves",
+			"usewith":"yes",
+			"fulldesc":"20"
+}],
+"curryoil":[{
+			"desc":"31",
+			"icon":"obj_curryoil",
+			"usewith":"yes",
+			"fulldesc":"21"
+}],
+"currysauce":[{
+			"desc":"32",
+			"icon":"obj_curry",
+			"fulldesc":"22",
+			"usewith":"yes"
+}],
+"daninvitation":[{
+			"desc":"33",
+			"icon":"obj_daninvitation",
+			"usewith":"yes",
+"onaction":[{
+			"lookat":[
+					{"say":"144"},
+					{"say":"145"}
+]}]}],
+"diary":[{
+			"desc":"34",
+			"icon":"obj_diary",
+			"fulldesc":"23",
+			"usewith":"yes"
+}],
+"east_map":[{
+			"desc":"35",
+			"fulldesc":"24",
+			"icon":"obj_eastmap",
+"onaction":[{
+			"use":[
+					{"ifleader,puppet":"marco"},
+					{"ifroom":"east_upperroad"},
+					{"loadroom":"east_downtown"},
+					{"else":""},
+					{"loadroom":"east_upperroad"},
+					{"endif":""},
+					{"else":""},
+					{"loadmap":"eastmap"},
+					{"endif":""}
+]}]}],
+"feather":[{
+			"desc":"36",
+			"icon":"obj_feather",
+			"fulldesc":"25",
+			"usewith":"yes",
+"onaction":[{
+			"usewith_wand":[
+					{"say":"146"},
+					{"drop":"feather"},
+					{"setstatus":"wand,feathered"}
+]}]}],
+"fishnchips":[{
+			"desc":"37",
+			"fulldesc":"26",
+			"icon":"obj_fishnchips",
+			"usewith":"yes",
+"onaction":[{
+			"use":[
+					{"say":"147"}
+]}]}],
+"guidohand":[{
+			"desc":"38",
+			"icon":"obj_hand",
+			"fulldesc":"27",
+			"usewith":"yes"
+}],
+"hotelcard":[{
+			"desc":"39",
+			"fulldesc":"28",
+			"icon":"obj_hcard"
+}],
+"jar":[{
+			"status":"empty",
+			"usewith":"yes",
+"onstatus":[{
+"empty":[{
+					"desc":"40",
+					"icon":"obj_jar",
+					"fulldesc":"29"
+}],"plantfilled":[{
+					"desc":"40",
+					"icon":"obj_plantjar",
+					"fulldesc":"30"
+}],"pearlfilled":[{
+					"desc":"40",
+					"icon":"obj_pearljar",
+					"fulldesc":"31"
+}]}]}],
+"marcocell":[{
+			"desc":"41",
+			"icon":"obj_android",
+			"fulldesc":"32",
+"onaction":[{
+			"use":[
+					{"setsuffix":"cell"},
+					{"say":"148"},
+					{"setsuffix":"_"}
+]}]}],
+"newscreenplay":[{
+			"desc":"42",
+			"fulldesc":"33",
+			"icon":"obj_screenplay",
+			"usewith":"yes"
+}],
+"ofeliakey":[{
+			"desc":"43",
+			"fulldesc":"34",
+			"icon":"obj_ofeliakey",
+			"usewith":"yes"
+}],
+"sandwich":[{
+			"status":"basic",
+			"usewith":"yes",
+"onstatus":[{
+"basic":[{
+					"desc":"44",
+					"icon":"obj_sandwich",
+					"fulldesc":"35"
+}],"spiced":[{
+					"desc":"45",
+					"icon":"obj_chillisandwich",
+					"fulldesc":"36"
+}]}],"onaction":[{
+			"usewith_chilli":[
+					{"ifstatus":"sandwich,basic"},
+					{"setstatus":"sandwich,spiced"},
+					{"say":"149"},
+					{"drop":"chilli"},
+					{"else":""},
+					{"say":"150"},
+					{"endif":""}
+],			"usewith_currysauce":[
+					{"say":"151"}
+]}]}],
+"saw":[{
+			"status":"normal",
+			"usewith":"yes",
+"onaction":[{
+			"usewith_curryoil":[
+					{"say":"152"},
+					{"drop":"curryoil"},
+					{"setstatus":"saw,oiled"},
+					{"say":"153"}
+				]
+}],"onstatus":[{
+"normal":[{
+					"fulldesc":"37",
+					"desc":"46",
+					"icon":"obj_saw"
+}],"oiled":[{
+					"fulldesc":"38",
+					"desc":"47",
+					"icon":"obj_greasedsaw"
+}]}]}],
+"spyglass":[{
+			"desc":"48",
+			"icon":"obj_spyglass",
+			"fulldesc":"39",
+			"usewith":"yes"
+}],
+"stefycell":[{
+			"desc":"41",
+			"icon":"obj_iphone",
+			"fulldesc":"40",
+"onaction":[{
+			"use":[
+					{"setsuffix":"cell"},
+					{"say":"34"},
+					{"setsuffix":"_"}
+]}]}],
+"ticket":[{
+			"desc":"49",
+			"icon":"obj_ticket",
+			"fulldesc":"41",
+			"usewith":"yes"
+}],
+"venicekey":[{
+			"desc":"50",
+			"fulldesc":"42",
+			"icon":"obj_venicekey",
+			"usewith":"yes"
+}],
+"wand":[{
+			"status":"normal",
+			"usewith":"yes",
+"onstatus":[{
+"normal":[{
+					"desc":"51",
+					"fulldesc":"43",
+					"icon":"obj_wand"
+}],"feathered":[{
+					"desc":"52",
+					"fulldesc":"44",
+					"icon":"obj_featherwand"
+}]}]}],
+"west_map":[{
+			"desc":"53",
+			"fulldesc":"45",
+			"icon":"obj_westmap",
+"onaction":[{
+			"use":[
+					{"loadmap":"westmap"}
+]}]}],
+"letter":[{
+			"desc":"54",
+			"fulldesc":"46",
+			"icon":"obj_letter"
+}],
+"novel":[{
+			"desc":"55",
+			"fulldesc":"47",
+			"icon":"obj_manuscript",
+			"usewith":"yes"
+}]}],"scenes":[{
+"splash":[{
+"_":[{
+			"onfirst":[
+					{"wait":"1500"},
+					{"loadroom":"home"}
+]}]}],
+"home":[{
+"_":[{
+			"onleave":[
+					{"settings":"verbs.showmode,aboveverbs"}
+],			"onenter":[
+					{"game":"new"}
+],			"onmusic":[
+					{"playmusic":"title,4000"}
+]}],"play":[{
+			"click":[
+					{"game":"new"},
+					{"switchto":"marco,direct"},
+					{"ifconfig":"seenprologue,1"},
+					{"showdlg":"skipprologue"},
+					{"else":""},
+					{"setconfig":"seenprologue,1"},
+					{"musicfadeout":"_,250"},
+					{"loadroom":"prologue_title"},
+					{"endif":""}
+]}],"load":[{
+			"click":[
+					{"showdlg":"load"}
+]}],"credits":[{
+			"click":[
+					{"showdlg":"credits"}
+]}],"options":[{
+			"click":[
+					{"showdlg":"options"}
+]}],"fullscreen":[{
+			"click":[
+					{"fullscreen":"toggle"}
+]}],"language":[{
+			"click":[
+					{"showdlg":"language"}
+]}],"quicktutorial":[{
+			"click":[
+					{"game":"new"},
+					{"switchto":"marco,direct"},
+					{"loadroom":"training"}
+]}]}],
+"endscreen":[{
+"_":[{
+			"onfirst":[
+					{"setsuffix,marco":"_"},
+					{"lockcameraon":"_"},
+					{"setpos,marco":"-40"},
+					{"setpos,stefy":"280"},
+					{"setpos,eapoe":"-40"},
+					{"setpos,hplovecraft":"280"},
+					{"setpos,dhan":"-40"},
+					{"setpos,luigi":"280"},
+					{"setpos,esalgari":"-40"},
+					{"setpos,jverne":"280"},
+					{"amoveto,marco":"100"},
+					{"amoveto,stefy":"140"},
+					{"say,yellow":"154"},
+					{"amoveto,eapoe":"70"},
+					{"amoveto,hplovecraft":"170"},
+					{"say,yellow":"155"},
+					{"say,yellow":"156"},
+					{"amoveto,esalgari":"40"},
+					{"amoveto,jverne":"200"},
+					{"say,yellow":"157"},
+					{"say,yellow":"158"},
+					{"say,yellow":"159"},
+					{"amoveto,dhan":"10"},
+					{"amoveto,luigi":"230"},
+					{"say,yellow":"160"},
+					{"say,yellow":"161"},
+					{"say,yellow":"162"},
+					{"say,yellow":"163"},
+					{"say,yellow":"164"},
+					{"say,yellow":"165"},
+					{"amoveto,marco":"280"},
+					{"amoveto,stefy":"-40"},
+					{"wait":"100"},
+					{"amoveto,eapoe":"280"},
+					{"amoveto,hplovecraft":"-40"},
+					{"wait":"100"},
+					{"amoveto,dhan":"280"},
+					{"amoveto,luigi":"-40"},
+					{"wait":"100"},
+					{"loadroom":"home"}
+],			"onmusic":[
+					{"playmusic":"west_mainloopfast,4000"}
+]}]}],
+"eastmap":[{
+"_":[{
+			"onenter":[
+					{"ifvisited":"east_lighthouse"},
+					{"showobj":"lighthouse"},
+					{"else":""},
+					{"hideobj":"lighthouse"},
+					{"endif":""},
+					{"ifvisited":"east_mcorridor"},
+					{"showobj":"mcorridor"},
+					{"else":""},
+					{"hideobj":"mcorridor"},
+					{"endif":""},
+					{"ifvisited":"east_downtown"},
+					{"showobj":"downtown"},
+					{"else":""},
+					{"hideobj":"downtown"},
+					{"endif":""},
+					{"hideobj":"cave"},
+					{"ifvisited":"east_dhanhouse"},
+					{"showobj":"dhanhouse"},
+					{"else":""},
+					{"hideobj":"dhanhouse"},
+					{"endif":""},
+					{"ifknown":"theresamonster"},
+					{"ifvisited":"east_fpathwest"},
+					{"showobj":"statue"},
+					{"else":""},
+					{"hideobj":"statue"},
+					{"endif":""},
+					{"ifvisited":"east_fpath"},
+					{"showobj":"bridge"},
+					{"else":""},
+					{"hideobj":"bridge"},
+					{"endif":""},
+					{"else":""},
+					{"hideobj":"statue"},
+					{"hideobj":"bridge"},
+					{"endif":""}
+],			"onmusic":[
+					{"playsound":"usemap"},
+					{"playmusic":"west_street"}
+]}],"back":[{
+			"click":[
+					{"loadroom":"$previous"}
+]}],"lighthouse":[{
+			"click":[
+					{"loadroom":"east_lighthouse,east_downtown"}
+]}],"downtown":[{
+			"click":[
+					{"loadroom":"east_downtown,east_upperroad"}
+]}],"mcorridor":[{
+			"click":[
+					{"ifvisited":"east_luigiroom"},
+					{"loadroom":"east_luigiroom,east_mcorridor"},
+					{"else":""},
+					{"loadroom":"east_mcorridor,east_upperroad"},
+					{"endif":""}
+]}],"dhanhouse":[{
+			"click":[
+					{"loadroom":"east_dhanhouse,east_fpathwest"}
+]}],"cave":[{
+			"click":[
+					{"loadroom":"east_cave"}
+]}],"bridge":[{
+			"click":[
+					{"loadroom":"east_fpath,east_downtown"}
+]}],"statue":[{
+			"click":[
+					{"loadroom":"east_fpathwest,east_downtown"}
+]}]}],
+"westmap":[{
+"_":[{
+			"onenter":[
+					{"ifvisited":"west_lighthouse"},
+					{"showobj":"lighthouse"},
+					{"else":""},
+					{"hideobj":"lighthouse"},
+					{"endif":""},
+					{"ifvisited":"west_museum"},
+					{"showobj":"museum"},
+					{"else":""},
+					{"hideobj":"museum"},
+					{"endif":""},
+					{"ifvisited":"west_mgarden"},
+					{"showobj":"mgarden"},
+					{"else":""},
+					{"hideobj":"mgarden"},
+					{"endif":""}
+],			"onmusic":[
+					{"playsound":"usemap"},
+					{"playmusic":"west_street"}
+]}],"back":[{
+			"click":[
+					{"loadroom":"$previous"}
+]}],"mgarden":[{
+			"click":[
+					{"loadroom":"west_mgarden,west_upperroad"}
+]}],"museum":[{
+			"click":[
+					{"loadroom":"west_museum,west_upperroad"}
+]}],"lighthouse":[{
+			"click":[
+					{"loadroom":"west_lighthouse,west_downtown"}
+]}],"downtown":[{
+			"click":[
+					{"loadroom":"west_downtown,west_upperroad"}
+]}],"fpath":[{
+			"click":[
+					{"loadroom":"west_fpath,west_downtown"}
+]}],"rstation":[{
+			"click":[
+					{"loadroom":"west_rstation,west_downtown"}
+]}]}],
+"prologue_title":[{
+"_":[{
+			"onfirst":[
+					{"label,title":"166"},
+					{"wait":"2000"},
+					{"loadroom":"prologue_baltimore_title"}
+],			"onmusic":[
+					{"playmusic":"_"},
+					{"playsound":"chaptitle"}
+]}]}],
+"prologue_baltimore_title":[{
+"_":[{
+			"onfirst":[
+					{"label,title":"167"},
+					{"label,subtitle":"168"},
+					{"wait":"2000"},
+					{"loadroom":"prologue_baltimore"}
+],			"onmusic":[
+					{"playmusic":"intro_poe,4000"}
+]}]}],
+"prologue_baltimore":[{
+"_":[{
+			"onfirst":[
+					{"setcameraon":"eapoe"},
+					{"moveto,eapoe":"586"},
+					{"wait":"500"},
+					{"moveto,eapoe":"186"},
+					{"say,dhan,eapoe":"169"},
+					{"say,dhan,eapoe":"170"},
+					{"say,eapoe,dhan":"171"},
+					{"say,dhan,eapoe":"172"},
+					{"say,eapoe,dhan":"173"},
+					{"say,dhan,eapoe":"174"},
+					{"moveto,eapoe":"dhan"},
+					{"setanim,eapoe":"take"},
+					{"setanim,dhan":"take"},
+					{"wait":"500"},
+					{"setanim,eapoe":"_"},
+					{"setanim,dhan":"_"},
+					{"moveto,eapoe":"240"},
+					{"setsuffix,eapoe":"examine"},
+					{"say,eapoe":"175"},
+					{"say,eapoe":"176"},
+					{"setsuffix,eapoe":"_"},
+					{"moveto,eapoe":"194"},
+					{"say,eapoe,dhan":"177"},
+					{"say,dhan,eapoe":"178"},
+					{"wait":"1000"},
+					{"say,eapoe,dhan":"179"},
+					{"say,dhan,eapoe":"180"},
+					{"musicfadeout":"_,2000"},
+					{"unsetroom":"*"},
+					{"loadroom":"prologue_providence_title"}
+]}]}],
+"prologue_providence_title":[{
+"_":[{
+			"onfirst":[
+					{"label,title":"181"},
+					{"label,subtitle":"182"},
+					{"wait":"2000"},
+					{"loadroom":"prologue_providence"}
+],			"onmusic":[
+					{"playmusic":"intro_hp,4000"}
+]}]}],
+"prologue_providence":[{
+"_":[{
+			"onfirst":[
+					{"setcameraon":"hplovecraft"},
+					{"say,#BAE1FF":"183"},
+					{"say,hplovecraft":"184"},
+					{"moveto,hplovecraft":"185"},
+					{"playanim,hplovecraft":"takelow"},
+					{"setsuffix,hplovecraft":"examine"},
+					{"say,hplovecraft":"185"},
+					{"setsuffix,hplovecraft":"_"},
+					{"say,#BAE1FF":"186"},
+					{"say,hplovecraft":"187"},
+					{"say,#BAE1FF":"188"},
+					{"say,hplovecraft":"189"},
+					{"say,#BAE1FF":"190"},
+					{"say,hplovecraft":"191"},
+					{"playanim,hplovecraft":"takelow"},
+					{"say,hplovecraft":"192"},
+					{"playanim,hplovecraft":"takelow"},
+					{"setsuffix,hplovecraft":"examine"},
+					{"say,hplovecraft":"193"},
+					{"setsuffix,hplovecraft":"_"},
+					{"playanim,hplovecraft":"takelow"},
+					{"setsuffix,hplovecraft":"examine"},
+					{"say,hplovecraft":"194"},
+					{"setsuffix,hplovecraft":"_"},
+					{"say,#BAE1FF":"188"},
+					{"say,hplovecraft":"195"},
+					{"musicfadeout":"_,2000"},
+					{"unsetroom":"*"},
+					{"loadroom":"prologue_pinkhouse_title"}
+]}]}],
+"prologue_pinkhouse_title":[{
+"_":[{
+			"onfirst":[
+					{"label,title":"196"},
+					{"label,subtitle":"197"},
+					{"wait":"2000"},
+					{"unsetroom":"marco"},
+					{"unsetroom":"stefy"},
+					{"loadroom":"prologue_pinkhouse1"}
+],			"onmusic":[
+					{"playsound":"chaptitle"}
+]}]}],
+"prologue_pinkhouse1":[{
+"_":[{
+			"onfirst":[
+					{"setpos,marco":"west_hotelhall+70"},
+					{"setpos,stefy":"west_hotelhall"},
+					{"faceto,marco":"stefy"},
+					{"setcameraon":"me"},
+					{"moveto,stefy":"west_hotelhall-40"},
+					{"moveto,stefy":"west_hotelhall-20"},
+					{"say,stefy,marco":"198"},
+					{"say,marco":"199"},
+					{"say,stefy,marco":"200"},
+					{"say,marco":"201"},
+					{"say,stefy,marco":"202"},
+					{"setsuffix,marco":"stressed"},
+					{"say,marco,stefy":"203"},
+					{"setsuffix,marco":"_"},
+					{"say,marco,stefy":"204"},
+					{"say,stefy,marco":"205"},
+					{"say,marco":"206"},
+					{"say,stefy,marco":"207"},
+					{"say,marco":"208"},
+					{"say,stefy,marco":"209"},
+					{"say,marco":"210"},
+					{"say,stefy,marco":"211"},
+					{"say,marco":"212"},
+					{"say,stefy,marco":"188"},
+					{"say,marco":"213"},
+					{"say,marco":"214"},
+					{"say,stefy,marco":"215"},
+					{"say,marco":"216"},
+					{"say,marco,jkrowling":"217"},
+					{"moveto,jkrowling":"240"},
+					{"faceto,stefy,jkrowling":""},
+					{"moveto,jkrowling":"480"},
+					{"amoveto,jkrowling":"728"},
+					{"say,stefy,jkrowling":"218"},
+					{"say,marco,stefy":"219"},
+					{"say,stefy,marco":"220"},
+					{"faceto,marco":"sking"},
+					{"moveto,sking":"240"},
+					{"faceto,stefy,sking":""},
+					{"moveto,sking":"480"},
+					{"amoveto,sking":"728"},
+					{"say,stefy,sking":"221"},
+					{"say,stefy,marco":"222"},
+					{"say,marco,stefy":"223"},
+					{"setsuffix,stefy":"stressed"},
+					{"say,stefy,marco":"224"},
+					{"setsuffix,stefy":"_"},
+					{"say,marco":"225"},
+					{"amoveto,marco":"728"},
+					{"wait":"1000"},
+					{"unsetroom":"*"},
+					{"loadroom":"prologue_pinkhouse2"}
+],			"onmusic":[
+					{"playmusic":"west_mainloop"}
+]}]}],
+"prologue_pinkhouse2":[{
+"_":[{
+			"onfirst":[
+					{"setcameraon":"marco"},
+					{"setpos,stefy":"-90"},
+					{"setpos,marco":"-30"},
+					{"amoveto,stefy":"284"},
+					{"moveto,marco":"314"},
+					{"say,stefy,marco":"226"},
+					{"faceto,marco":"stefy"},
+					{"setsuffix,stefy":"stressed"},
+					{"say,stefy,marco":"227"},
+					{"setsuffix,stefy":"_"},
+					{"say,marco,stefy":"228"},
+					{"setsuffix,stefy":"stressed"},
+					{"say,stefy,marco":"229"},
+					{"setsuffix,stefy":"_"},
+					{"setsuffix,stefy":"point"},
+					{"say,stefy,marco":"230"},
+					{"setsuffix,stefy":"_"},
+					{"say,marco,stefy":"231"},
+					{"say,stefy,marco":"232"},
+					{"say,marco,stefy":"233"},
+					{"amoveto,marco":"463"},
+					{"wait":"1000"},
+					{"unsetroom":"*"},
+					{"loadroom":"prologue_pinkhouse3"}
+],			"onmusic":[
+					{"playmusic":"west_mainloop"}
+]}]}],
+"prologue_pinkhouse3":[{
+"_":[{
+			"onfirst":[
+					{"setpos,marco":"-30"},
+					{"moveto,marco":"140"},
+					{"say,marco":"234"},
+					{"moveto,marco":"400"},
+					{"say,marco":"235"},
+					{"amoveto,marco":"580"},
+					{"wait":"1000"},
+					{"loadroom":"prologue_pinkhouse4"}
+],			"onmusic":[
+					{"playmusic":"west_mainloop"}
+]}]}],
+"prologue_pinkhouse4":[{
+"_":[{
+			"onfirst":[
+					{"setcameraon":"stefy"},
+					{"hideactor":"marco"},
+					{"setpos,stefy":"285"},
+					{"moveto,stefy":"260"},
+					{"wait":"500"},
+					{"moveto,stefy":"330"},
+					{"say,stefy,marco":"236"},
+					{"wait":"500"},
+					{"moveto,stefy":"240"},
+					{"moveto,stefy":"360"},
+					{"say,stefy":"237"},
+					{"wait":"500"},
+					{"moveto,stefy":"280"},
+					{"moveto,stefy":"400"},
+					{"say,stefy":"238"},
+					{"wait":"1000"},
+					{"say,stefy":"239"},
+					{"amoveto,stefy":"550"},
+					{"wait":"1000"},
+					{"unsetroom":"marco"},
+					{"loadroom":"east_fpath"}
+],			"onmusic":[
+					{"playmusic":"west_mainloop"}
+]}]}],
+"epilogue_title":[{
+"_":[{
+			"onfirst":[
+					{"label,title":"240"},
+					{"wait":"2000"},
+					{"loadroom":"epilogue_pinkhouse_title"}
+],			"onmusic":[
+					{"playmusic":"_"},
+					{"playsound":"chaptitle"}
+]}]}],
+"epilogue_pinkhouse_title":[{
+"_":[{
+			"onfirst":[
+					{"label,title":"196"},
+					{"label,subtitle":"197"},
+					{"wait":"1000"},
+					{"unsetroom":"marco"},
+					{"unsetroom":"stefy"},
+					{"unsetroom":"dbrown"},
+					{"unsetroom":"sking"},
+					{"unsetroom":"grrmartin"},
+					{"unsetroom":"rlstine"},
+					{"unsetroom":"jkrowling"},
+					{"unsetroom":"eapoe"},
+					{"unsetroom":"hplovecraft"},
+					{"unsetroom":"esalgari"},
+					{"unsetroom":"jverne"},
+					{"unsetroom":"dhan"},
+					{"unsetroom":"luigi"},
+					{"loadroom":"epilogue_pinkhouse"}
+],			"onmusic":[
+					{"playmusic":"west_mainloop"}
+]}]}],
+"epilogue_pinkhouse":[{
+"_":[{
+			"onfirst":[
+					{"setpos,marco":"700"},
+					{"setpos,sking":"750"},
+					{"setpos,grrmartin":"800"},
+					{"setpos,jkrowling":"830"},
+					{"setpos,rlstine":"780"},
+					{"amoveto,sking":"320"},
+					{"amoveto,grrmartin":"350"},
+					{"amoveto,rlstine":"260"},
+					{"amoveto,jkrowling":"230"},
+					{"moveto,marco":"310"},
+					{"moveto,marco":"440"},
+					{"showobj":"nobridge"},
+					{"wait":"100"},
+					{"hideobj":"nobridge"},
+					{"wait":"200"},
+					{"showobj":"nobridge"},
+					{"wait":"100"},
+					{"hideobj":"nobridge"},
+					{"wait":"200"},
+					{"showobj":"nobridge"},
+					{"wait":"100"},
+					{"hideobj":"nobridge"},
+					{"wait":"200"},
+					{"showobj":"nobridge"},
+					{"say":"241"},
+					{"moveto,marco":"290"},
+					{"say":"242"},
+					{"say,sking,me":"243"},
+					{"say,jkrowling,sking":"244"},
+					{"say,grrmartin,jkrowling":"245"},
+					{"say,rlstine,grrmartin":"246"},
+					{"say,grrmartin,rlstine":"247"},
+					{"say,marco,grrmartin":"248"},
+					{"say,jkrowling,marco":"249"},
+					{"say,marco,jkrowling":"250"},
+					{"say,sking,jkrowling":"251"},
+					{"say,jkrowling,sking":"252"},
+					{"say,grrmartin,sking":"253"},
+					{"say,rlstine,grrmartin":"254"},
+					{"amoveto,sking":"0"},
+					{"amoveto,grrmartin":"0"},
+					{"amoveto,jkrowling":"0"},
+					{"moveto,rlstine":"190"},
+					{"wait":"1000"},
+					{"moveto,rlstine":"255"},
+					{"say,rlstine":"255"},
+					{"say":"256"},
+					{"say,rlstine":"257"},
+					{"say":"258"},
+					{"say,rlstine":"259"},
+					{"say":"260"},
+					{"say,rlstine":"261"},
+					{"moveto,rlstine":"100"},
+					{"say,rlstine":"262"},
+					{"moveto,rlstine":"0"},
+					{"say":"263"},
+					{"loadroom":"epilogue_marcos_title"}
+],			"onmusic":[
+					{"playmusic":"west_mainloop"}
+]}]}],
+"epilogue_marcos_title":[{
+"_":[{
+			"onfirst":[
+					{"label,title":"264"},
+					{"label,subtitle":"265"},
+					{"wait":"1000"},
+					{"loadroom":"epilogue_marcos"}
+],			"onmusic":[
+					{"playmusic":"west_mainloopfx"}
+]}]}],
+"epilogue_marcos":[{
+"_":[{
+			"onfirst":[
+					{"setpos,stefy":"-30"},
+					{"moveto,stefy":"102"},
+					{"faceto,marcohome":"right,lock"},
+					{"say,stefy":"266"},
+					{"playanim,marcohome":"lookaround"},
+					{"say,marcohome":"267"},
+					{"say,stefy":"268"},
+					{"say,marcohome":"254"},
+					{"say,stefy":"269"},
+					{"say,marcohome":"199"},
+					{"say,stefy":"270"},
+					{"say,stefy":"271"},
+					{"say,marcohome":"199"},
+					{"say,stefy":"272"},
+					{"say,marcohome":"273"},
+					{"say,stefy":"202"},
+					{"playanim,marcohome":"lookaround"},
+					{"say,marcohome":"203"},
+					{"say,marcohome":"274"},
+					{"moveto,stefy":"marcohome"},
+					{"say,stefy":"275"},
+					{"say,marcohome":"276"},
+					{"say,stefy":"277"},
+					{"say,marcohome":"278"},
+					{"say,stefy":"279"},
+					{"say,marcohome":"280"},
+					{"say,stefy":"281"},
+					{"say,marcohome":"282"},
+					{"say,stefy":"283"},
+					{"say,marcohome":"284"},
+					{"wait":"1000"},
+					{"unsetroom":"*"},
+					{"loadroom":"endscreen"}
+],			"onmusic":[
+					{"playmusic":"west_mainloopfx"}
+]}]}]}],"locations":[{
+"west_downtown":[{
+			"desc":"65",
+"_":[{
+			"onmusic":[
+					{"playmusic":"west_harbour"}
+]}],"west_hotelhall":[{
+			"moveto":[
+					{"ifknown":"takingfish"},
+					{"say":"285"},
+					{"say,dbrown":"286"},
+					{"learn":"takingfishcheck"},
+					{"else":""},
+					{"loadroom":"west_hotelhall"},
+					{"endif":""}
+]}]}],
+"west_drugstore":[{
+			"desc":"75",
+"_":[{
+			"onmusic":[
+					{"playmusic":"west_mainloopfast"}
+]}],"drugstoreclerk":[{
+			"talkto":[
+					{"say,me,drugstoreclerk":"85"},
+					{"say,drugstoreclerk,me":"128"},
+					{"newdialog":""},
+					{"addline,!once_52":"287"},
+{"learn":"once_52"},
+					{"say,drugstoreclerk":"288"},
+					{"say":"188"},
+					{"say,drugstoreclerk":"289"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,needfishsupply+!once_53":"290"},
+{"learn":"!once_53"},
+					{"say,drugstoreclerk":"291"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"292"},
+					{"say,drugstoreclerk":"20"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""},
+					{"ifknown":"!mumchoosebooks"},
+					{"say,drugstoreclerk":"293"},
+					{"endif":""}
+]}],"postallady":[{
+			"talkto":[
+					{"say,me,postallady":"85"},
+					{"say,postallady,me":"128"},
+					{"newdialog":""},
+					{"addline,!once_54":"287"},
+{"learn":"once_54"},
+					{"say,postallady":"294"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,mumchoosebooks+!bookshelp":"295"},
+					{"say,postallady":"296"},
+					{"say,dbrown":"297"},
+					{"say,postallady":"298"},
+					{"say,dbrown":"254"},
+					{"say,postallady":"299"},
+					{"say":"300"},
+					{"say,dbrown":"301"},
+					{"learn":"bookshelp"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,bookshelp":"302"},
+					{"say,postallady":"303"},
+					{"say,dbrown":"304"},
+					{"say,postallady":"305"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,teacher+!once_55":"306"},
+{"learn":"!once_55"},
+					{"say,postallady":"307"},
+					{"say":"308"},
+					{"say,postallady":"309"},
+					{"say,postallady":"310"},
+					{"say,dbrown":"311"},
+					{"say,postallady":"312"},
+					{"say,postallady":"313"},
+					{"learn":"sheknowsmansion"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,sheknowsmansion":"314"},
+					{"say,postallady":"315"},
+					{"say,postallady":"316"},
+					{"learn":"bathroomtogarden"},
+					{"say,postallady":"317"},
+					{"learn":"madhouse"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,madhouse":"318"},
+					{"say,postallady":"319"},
+					{"say":"320"},
+					{"say,postallady":"321"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"20"},
+					{"say,postallady":"322"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}],"books":[{
+			"lookat":[
+					{"say":"323"},
+					{"ifonce":"once_58"},
+					{"say":"324"},
+					{"say,dbrown":"325"},
+					{"say,drugstoreclerk":"326"},
+					{"learn":"mumchoosebooks"},
+					{"endif":""}
+],			"use":[
+					{"say":"327"}
+]}],"food":[{
+			"lookat":[
+					{"say":"328"}
+],			"use":[
+					{"say":"329"},
+					{"ifknown":"needmexflavor+!$chilli"},
+					{"say":"330"},
+					{"moveto":"drugstoreclerk-80"},
+					{"faceto":"drugstoreclerk"},
+					{"say,drugstoreclerk":"331"},
+					{"playanim":"give"},
+					{"take":"chilli"},
+					{"else":""},
+					{"endif":""}
+]}],"fresh":[{
+			"lookat":[
+					{"say":"332"}
+],			"use":[
+					{"ifnottaken":"sandwich"},
+					{"say":"333"},
+					{"say,drugstoreclerk":"334"},
+					{"moveto":"fresh-15"},
+					{"moveto,dbrown":"fresh+50"},
+					{"setstatus":"fresh,opened"},
+					{"playanim":"give"},
+					{"take":"sandwich"},
+					{"wait":"800"},
+					{"setstatus":"fresh,closed"},
+					{"wait":"1000"},
+					{"setstatus":"fresh,unlit"},
+					{"wait":"1000"},
+					{"faceto":"drugstoreclerk"},
+					{"say":"335"},
+					{"say,postallady":"336"},
+					{"say,drugstoreclerk":"337"},
+					{"moveto":"drugstoreclerk-80"},
+					{"faceto":"drugstoreclerk"},
+					{"say,drugstoreclerk":"338"},
+					{"playanim":"give"},
+					{"say,drugstoreclerk":"339"},
+					{"say":"340"},
+					{"else":""},
+					{"say":"341"},
+					{"endif":""}
+]}]}],
+"west_fpath":[{
+			"desc":"72",
+"_":[{
+			"onfirst":[
+					{"hideactor":"dbrown"},
+					{"call":"stefystart"},
+					{"setpos":"225"},
+					{"hideobj":"plantmouth"},
+					{"setstatus":"plantmouth,sleep"},
+					{"moveto":"435"},
+					{"say":"342"},
+					{"showactor":"dbrown"},
+					{"setpos,dbrown":"180"},
+					{"setblock":"dbrown+70,firstmet"}
+],			"onalert_firstmet":[
+					{"say":"343"},
+					{"say,dbrown":"344"},
+					{"say":"345"},
+					{"say,dbrown":"346"},
+					{"say":"347"},
+					{"say,dbrown":"348"},
+					{"say":"349"},
+					{"say,dbrown":"350"},
+					{"moveto,dbrown":"300"},
+					{"amoveto":"405"},
+					{"moveto,dbrown":"435"},
+					{"faceto,dbrown":"right,lock"},
+					{"wait":"1000"},
+					{"say,dbrown":"351"},
+					{"say":"352"},
+					{"say,dbrown,me":"353"},
+					{"say":"354"},
+					{"say,dbrown":"355"},
+					{"say":"69"},
+					{"say,dbrown":"356"},
+					{"say":"357"},
+					{"say,dbrown":"358"},
+					{"say":"359"},
+					{"say,dbrown":"360"},
+					{"setleader,dbrown":"me"},
+					{"unsetblock":"dbrown"}
+],			"onconfigupdate":[
+					{"ifroomstatus":"timebridge"},
+					{"ifonce":"once_61"},
+					{"showobj":"plantmouth"},
+					{"ifstatus":"plantmouth,open"},
+					{"else":""},
+					{"setstatus":"plantmouth,alive"},
+					{"endif":""},
+					{"endif":""},
+					{"endif":""}
+],			"onmusic":[
+					{"playmusic":"west_forest"}
+]}],"onstatus_timebridge":[{
+"letter":[{
+			"use":[
+						{"moveto":"448"},
+						{"ifonce":"once_64"},
+						{"say":"361"},
+						{"say,dbrown":"362"},
+						{"say":"64"},
+						{"endif":""},
+						{"ifknown":"!marcospassword+!passwordknown"},
+						{"say":"363"},
+						{"say,me,dbrown":"364"},
+						{"learn":"speechstefywantpassword"},
+						{"endif":""},
+						{"ifknown":"marcossequence+symbolsequencefound"},
+						{"say":"365"},
+						{"learn":"speechsymbolsequencefoundandsent"},
+						{"endif":""}
+]}],"plantmouth":[{
+			"usewith_currysauce":[
+						{"moveto":"plantmouth"},
+						{"faceto":"plantmouth"},
+						{"playanim":"takelow"},
+						{"drop":"currysauce"},
+						{"setstatus":"plantmouth,open"},
+						{"moveto":"plantmouth-80"},
+						{"say":"366"},
+						{"moveto":"plantmouth-20"},
+						{"say":"367"},
+						{"learn":"howworksconnection"}
+],			"usewith_diary":[
+						{"moveto":"plantmouth"},
+						{"faceto":"plantmouth"},
+						{"playanim":"takelow"},
+						{"ifstatus":"plantmouth,open"},
+						{"drop":"diary"},
+						{"say":"368"},
+						{"showobj,east_fpath":"diary"},
+						{"else":""},
+						{"say":"369"},
+						{"endif":""}
+],			"usewith_guidohand":[
+						{"moveto":"plantmouth"},
+						{"faceto":"plantmouth"},
+						{"playanim":"takelow"},
+						{"ifstatus":"plantmouth,open"},
+						{"drop":"guidohand"},
+						{"say":"370"},
+						{"showobj,east_fpath":"hand"},
+						{"else":""},
+						{"say":"369"},
+						{"endif":""}
+],			"usewith_fishnchips":[
+						{"moveto":"plantmouth"},
+						{"faceto":"plantmouth"},
+						{"playanim":"takelow"},
+						{"ifstatus":"plantmouth,open"},
+						{"say":"371"},
+						{"else":""},
+						{"setstatus":"plantmouth,excited"},
+						{"wait":"200"},
+						{"setstatus":"plantmouth,alive"},
+						{"say":"372"},
+						{"say,dbrown":"373"},
+						{"endif":""}
+],			"usewith_letter":[
+						{"moveto":"plantmouth"},
+						{"faceto":"plantmouth"},
+						{"ifstatus":"plantmouth,open"},
+						{"say":"374"},
+						{"else":""},
+						{"say":"369"},
+						{"endif":""}
+],			"lookat":[
+						{"ifstatus":"plantmouth,open"},
+						{"say":"375"},
+						{"else":""},
+						{"ifonce":"once_67"},
+						{"say":"376"},
+						{"say,dbrown":"377"},
+						{"learn":"howworksconnection"},
+						{"else":""},
+						{"endif":""},
+						{"endif":""}
+],			"use":[
+						{"say":"378"}
+]}]}],"plantmouth":[{
+}]}],
+"west_hotelhall":[{
+			"desc":"74",
+"_":[{
+			"onentershow":[
+					{"ifroom,hotelowner":"west_hotelhall"},
+					{"setsuffix,hotelowner":"cell"},
+					{"say,hotelowner":"379"},
+					{"ifonce":"once_70"},
+					{"say,hotelowner":"380"},
+					{"say":"381"},
+					{"say,hotelowner":"382"},
+					{"say":"381"},
+					{"say,hotelowner":"383"},
+					{"say":"381"},
+					{"say,hotelowner":"384"},
+					{"setsuffix,hotelowner":"_"},
+					{"say,hotelowner":"385"},
+					{"say":"262"},
+					{"say,hotelowner":"386"},
+					{"else":""},
+					{"setsuffix,hotelowner":"_"},
+					{"say,hotelowner":"384"},
+					{"endif":""},
+					{"endif":""}
+],			"onmusic":[
+					{"playmusic":"west_mainloopfx"}
+]}],"hotelowner":[{
+			"talkto":[
+					{"say,hotelowner,me":"128"},
+					{"newdialog":""},
+					{"addline,!once_71":"287"},
+{"learn":"once_71"},
+					{"say,hotelowner":"278"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!once_72":"387"},
+{"learn":"once_72"},
+					{"say,hotelowner":"388"},
+					{"learn":"factotum"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"389"},
+					{"say,hotelowner":"390"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"391"},
+					{"say,hotelowner":"322"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}],"cards":[{
+			"use":[
+					{"ifnottaken":"hotelcard"},
+					{"say":"392"},
+					{"say,hotelowner":"393"},
+					{"reach":"cards"},
+					{"playanim":"take"},
+					{"take":"hotelcard"},
+					{"else":""},
+					{"say":"394"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"395"}
+]}],"cleaningtools":[{
+			"use":[
+					{"say":"396"}
+],			"lookat":[
+					{"say":"397"},
+					{"ifroom,hotelowner":"west_hotelhall"},
+					{"faceto":"hotelowner"},
+					{"say,hotelowner":"398"},
+					{"say":"188"},
+					{"say,hotelowner":"399"},
+					{"ifonce":"once_75"},
+					{"say":"400"},
+					{"say,hotelowner":"401"},
+					{"endif":""},
+					{"endif":""}
+]}],"notebook":[{
+			"use":[
+					{"ifroom,hotelowner":"west_hotelhall"},
+					{"say,hotelowner":"402"},
+					{"else":""},
+					{"say":"403"},
+					{"learn":"storageroomnumber"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"404"},
+					{"ifknown":"bathroomtogarden+needkeycode"},
+					{"say,me,dbrown":"405"},
+					{"say,dbrown,me":"406"},
+					{"say,hotelowner":"188"},
+					{"say,me,hotelowner":"407"},
+					{"say,hotelowner":"408"},
+					{"say":"64"},
+					{"endif":""}
+]}],"west_downtown":[{
+			"moveto":[
+					{"ifknown":"ownertricked"},
+					{"say":"409"},
+					{"else":""},
+					{"loadroom":"west_downtown"},
+					{"endif":""}
+]}],"west_map":[{
+			"use":[
+					{"ifroom,hotelowner":"west_hotelhall"},
+					{"loadmap":"westmap"},
+					{"else":""},
+					{"say":"410"},
+					{"endif":""}
+]}],"west_hotelroom":[{
+			"moveto":[
+					{"ifknown":"ownertricked"},
+					{"setroom,hotelowner":"west_hotelhall"},
+					{"forget":"ownertricked"},
+					{"endif":""},
+					{"loadroom":"west_hotelroom"}
+]}]}],
+"west_hotelroom":[{
+			"desc":"88",
+"_":[{
+			"onmusic":[
+					{"playmusic":"west_mainloopfx"}
+]}],"marcolaptop":[{
+			"use":[
+					{"ifknown":"passwordknown"},
+					{"say":"411"},
+					{"playanim":"take"},
+					{"say":"412"},
+					{"say":"413"},
+					{"say,dbrown":"414"},
+					{"say":"415"},
+					{"ifknown":"marcossequence"},
+					{"say,dbrown":"416"},
+					{"say":"64"},
+					{"playanim,dbrown":"take"},
+					{"say,dbrown":"417"},
+					{"say,dbrown":"418"},
+					{"learn":"symbolsequencefound"},
+					{"else":""},
+					{"say":"419"},
+					{"endif":""},
+					{"else":""},
+					{"say,dbrown":"420"},
+					{"playanim":"take"},
+					{"say":"421"},
+					{"say,dbrown":"422"},
+					{"say,me,dbrown":"423"},
+					{"say,dbrown":"424"},
+					{"say,me,dbrown":"425"},
+					{"say,dbrown":"426"},
+					{"faceto,stefy":"marcolaptop"},
+					{"playanim":"take"},
+					{"say":"427"},
+					{"say,dbrown":"428"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"429"}
+]}],"stefycell":[{
+			"use":[
+					{"call":"callhotelowner"}
+]}],"west_map":[{
+			"use":[
+					{"ifroom,hotelowner":"west_hotelhall"},
+					{"loadmap":"westmap"},
+					{"else":""},
+					{"say":"410"},
+					{"endif":""}
+]}],"hotelcard":[{
+			"use":[
+					{"call":"callhotelowner"}
+]}]}],
+"west_lighthouse":[{
+			"desc":"64",
+"_":[{
+			"onconfig":[
+					{"setsuffix,professor":"drink"},
+					{"faceto,professor":"left,lock"},
+					{"setblock":"professor+40,pleasestandback"}
+],			"onalert_pleasestandback":[
+					{"faceto,professor":"right,lock"},
+					{"say,professor,me":"430"},
+					{"ifonce":"once_78"},
+					{"say,professor,me":"431"},
+					{"say":"432"},
+					{"endif":""},
+					{"faceto,professor":"left,lock"}
+],			"onmusic":[
+					{"playmusic":"seaside"}
+]}],"professor":[{
+			"talkto":[
+					{"say,me,professor":"85"},
+					{"faceto,professor":"right,lock"},
+					{"say,professor,me":"433"},
+					{"newdialog":""},
+					{"addline,!once_79":"287"},
+{"learn":"once_79"},
+					{"say,professor":"348"},
+					{"say":"188"},
+					{"say,professor":"434"},
+					{"say,dbrown":"435"},
+					{"say,professor":"436"},
+					{"say":"437"},
+					{"say,professor":"438"},
+					{"say,professor":"439"},
+					{"say,professor":"440"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"441"},
+					{"say,professor":"442"},
+					{"say,dbrown":"443"},
+					{"say,professor":"444"},
+					{"learn":"instrumentreason"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,instrumentreason":"445"},
+					{"say,professor":"446"},
+					{"say":"447"},
+					{"say,professor":"448"},
+					{"say,dbrown":"449"},
+					{"say,professor":"450"},
+					{"say,dbrown":"451"},
+					{"say,professor":"452"},
+					{"say,dbrown":"453"},
+					{"learn":"professorhungry"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"454"},
+					{"say,professor":"454"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""},
+					{"faceto,professor":"left,lock"},
+					{"wait":"500"},
+					{"ifknown":"professorhungry"},
+					{"say,professor":"455"},
+					{"endif":""}
+],			"usewith_sandwich":[
+					{"ifknown":"professorhungry"},
+					{"say,professor,me":"456"},
+					{"setsuffix,professor":"_"},
+					{"moveto,me":"professor"},
+					{"setanim,me":"take"},
+					{"setanim,professor":"take"},
+					{"wait":"500"},
+					{"setanim,me":"_"},
+					{"setanim,professor":"_"},
+					{"setsuffix,professor":"examine"},
+					{"say,professor,me":"457"},
+					{"ifstatus":"sandwich,basic"},
+					{"say,professor,me":"458"},
+					{"setsuffix,professor":"_"},
+					{"moveto,me":"professor"},
+					{"setanim,me":"take"},
+					{"setanim,professor":"take"},
+					{"wait":"500"},
+					{"setanim,me":"_"},
+					{"setanim,professor":"_"},
+					{"say,professor":"459"},
+					{"learn":"needmexflavor"},
+					{"else":""},
+					{"say,professor,me":"460"},
+					{"setsuffix,professor":"_"},
+					{"drop":"sandwich"},
+					{"playanim,professor":"eat"},
+					{"wait":"1000"},
+					{"say,professor,me":"461"},
+					{"moveto,professor":"50"},
+					{"moveto,professor":"70"},
+					{"hideactor":"professor"},
+					{"unsetblock":"professor"},
+					{"endif":""},
+					{"setsuffix,professor":"drink"},
+					{"else":""},
+					{"say":"462"},
+					{"endif":""}
+],			"usewith_currysauce":[
+					{"ifknown":"professorhungry"},
+					{"say,professor,me":"463"},
+					{"else":""},
+					{"say":"462"},
+					{"endif":""}
+],			"usewith_fishnchips":[
+					{"ifknown":"professorhungry"},
+					{"say,professor,me":"464"},
+					{"else":""},
+					{"say":"462"},
+					{"endif":""}
+]}],"ticket":[{
+			"lookat":[
+					{"reach":"ticket"},
+					{"ifnear":"ticket"},
+					{"say":"465"},
+					{"endif":""}
+],			"use":[
+					{"reach":"ticket"},
+					{"ifnear":"ticket"},
+					{"ifknown":"notickets"},
+					{"say":"466"},
+					{"playanim":"lookaround"},
+					{"playanim":"takelow"},
+					{"take":"ticket"},
+					{"hideobj":"ticket"},
+					{"else":""},
+					{"say":"467"},
+					{"endif":""},
+					{"endif":""}
+]}],"research":[{
+			"lookat":[
+					{"reach":"research"},
+					{"ifnear":"research"},
+					{"say":"468"},
+					{"endif":""}
+],			"use":[
+					{"reach":"research"},
+					{"ifnear":"research"},
+					{"say":"469"},
+					{"endif":""}
+]}]}],
+"west_mgarden":[{
+			"desc":"95",
+"_":[{
+			"onmusic":[
+					{"playmusic":"west_forest"}
+]}],"statue":[{
+			"use":[
+					{"say":"470"}
+],			"lookat":[
+					{"say":"471"}
+]}],"west_mhall":[{
+			"moveto":[
+					{"say":"472"}
+]}],"west_upperroad":[{
+			"moveto":[
+					{"say":"473"}
+]}],"west_mlibrary":[{
+			"moveto":[
+					{"ifknown":"!windowbroken"},
+					{"learn":"windowclosed"},
+					{"say":"474"},
+					{"else":""},
+					{"loadroom":"west_mlibrary"},
+					{"endif":""}
+]}],"dbrown":[{
+			"talkto":[
+					{"ifknown":"windowclosed+!windowbroken"},
+					{"say,stefy,dbrown":"475"},
+					{"say,dbrown,stefy":"476"},
+					{"moveto,dbrown":"west_mlibrary"},
+					{"playanim,dbrown":"takelow"},
+					{"say,dbrown":"153"},
+					{"setstatus":"west_mlibrary,open"},
+					{"learn":"windowbroken"},
+					{"else":""},
+					{"say":"477"},
+					{"endif":""}
+]}],"ground":[{
+			"lookat":[
+					{"say":"478"},
+					{"ifknown":"statuemoved"},
+					{"say":"479"},
+					{"ifknown":"handburied"},
+					{"say":"480"},
+					{"endif":""},
+					{"endif":""}
+],			"use":[
+					{"ifknown":"statuemoved"},
+					{"ifknown":"!$guidohand+handburied"},
+					{"say":"481"},
+					{"say":"482"},
+					{"playanim":"takelow"},
+					{"wait":"500"},
+					{"say":"483"},
+					{"say":"484"},
+					{"say,stefy,dbrown":"485"},
+					{"say,dbrown,stefy":"486"},
+					{"take":"guidohand"},
+					{"say":"487"},
+					{"else":""},
+					{"say":"488"},
+					{"endif":""},
+					{"else":""},
+					{"say":"489"},
+					{"endif":""}
+]}]}],
+"west_mlibrary":[{
+			"desc":"88",
+"_":[{
+			"onmusic":[
+					{"playmusic":"west_mainloop"}
+]}],"diary":[{
+			"lookat":[
+					{"say":"490"}
+],			"use":[
+					{"reach":"diary"},
+					{"playanim":"takelow"},
+					{"take":"diary"},
+					{"hideobj":"diary"},
+					{"say":"491"}
+]}],"picture":[{
+			"lookat":[
+					{"say":"492"},
+					{"say,dbrown":"493"},
+					{"learn":"statuemoved"}
+],			"use":[
+					{"say":"494"}
+]}],"books1":[{
+			"lookat":[
+					{"call":"mlibrarybookslook"}
+],			"use":[
+					{"call":"mlibrarybooksuse"}
+]}],"chest":[{
+			"lookat":[
+					{"say":"495"}
+],			"use":[
+					{"say":"496"},
+					{"say":"497"},
+					{"ifnottaken":"letter"},
+					{"say":"498"},
+					{"ifknown":"needeastobject"},
+					{"say":"499"},
+					{"take":"letter"},
+					{"say":"487"},
+					{"endif":""},
+					{"endif":""}
+]}],"books2":[{
+			"lookat":[
+					{"call":"mlibrarybookslook"}
+],			"use":[
+					{"call":"mlibrarybooksuse"}
+]}],"books3":[{
+			"lookat":[
+					{"call":"mlibrarybookslook"}
+],			"use":[
+					{"call":"mlibrarybooksuse"}
+]}]}],
+"west_museum":[{
+			"desc":"71",
+"_":[{
+			"onconfig":[
+					{"setblock":"museumemployee,ticketplease"}
+],			"onalert_ticketplease":[
+					{"say,museumemployee":"500"}
+],			"onmusic":[
+					{"playmusic":"west_mainloop"}
+]}],"museumemployee":[{
+			"usewith_ticket":[
+					{"say":"501"},
+					{"playanim":"give"},
+					{"drop":"ticket"},
+					{"playanim,museumemployee":"take"},
+					{"say,museumemployee":"502"},
+					{"say,dbrown":"503"},
+					{"say,museumemployee":"504"},
+					{"say,dbrown":"505"},
+					{"say,museumemployee":"506"},
+					{"say,dbrown":"20"},
+					{"unsetblock":"museumemployee"}
+],			"talkto":[
+					{"say,me,museumemployee":"85"},
+					{"say,museumemployee,me":"128"},
+					{"newdialog":""},
+					{"addline,!once_80":"287"},
+{"learn":"once_80"},
+					{"say,museumemployee":"507"},
+					{"say,dbrown":"508"},
+					{"say,museumemployee":"509"},
+					{"say,dbrown":"64"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!$ticket":"510"},
+					{"say,museumemployee":"511"},
+					{"say":"512"},
+					{"say,museumemployee":"513"},
+					{"learn":"notickets"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,notickets+!ticket_taken":"514"},
+					{"say,museumemployee":"515"},
+					{"learn":"nowayin"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,nowayin+!once_81":"516"},
+{"learn":"!once_81"},
+					{"say,museumemployee":"517"},
+					{"say":"518"},
+					{"say,museumemployee":"519"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,winteriscoming":"520"},
+					{"say,museumemployee":"521"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"20"},
+					{"say,museumemployee":"322"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}],"west_mgarden":[{
+			"moveto":[
+					{"say":"522"},
+					{"learn":"needkeycode"}
+]}],"keypad":[{
+			"lookat":[
+					{"reach":"keypad"},
+					{"ifnear":"keypad"},
+					{"say":"523"},
+					{"learn":"needkeycode"},
+					{"endif":""}
+],			"use":[
+					{"ifknown":"storageroomnumber"},
+					{"ifonce":"once_84"},
+					{"say":"524"},
+					{"say":"525"},
+					{"endif":""},
+					{"loadroom":"west_mgarden"},
+					{"else":""},
+					{"say":"526"},
+					{"endif":""}
+]}],"picture":[{
+			"lookat":[
+					{"reach":"picture"},
+					{"ifnear":"picture"},
+					{"say":"527"},
+					{"ifmet":"postallady"},
+					{"say":"528"},
+					{"say,dbrown":"529"},
+					{"say":"530"},
+					{"learn":"teacher"},
+					{"endif":""},
+					{"endif":""}
+],			"use":[
+					{"say":"531"}
+]}],"item1":[{
+			"lookat":[
+					{"reach":"item1"},
+					{"ifnear":"item1"},
+					{"say":"532"},
+					{"say,dbrown":"533"},
+					{"say":"534"},
+					{"say,dbrown":"535"},
+					{"learn":"winteriscoming"},
+					{"ifknown":"sharedtimetalktules"},
+					{"say":"536"},
+					{"say,dbrown":"188"},
+					{"say":"537"},
+					{"say,dbrown":"538"},
+					{"say":"539"},
+					{"say,dbrown":"540"},
+					{"setroomstatus,west_fpath":"timebridge"},
+					{"showobj,west_fpath":"plantmouth"},
+					{"learn":"needeastobject"},
+					{"endif":""},
+					{"endif":""}
+],			"use":[
+					{"say":"541"}
+]}],"item2":[{
+			"lookat":[
+					{"reach":"item2"},
+					{"ifnear":"item2"},
+					{"say":"542"},
+					{"ifknown":"marcospassword"},
+					{"say":"543"},
+					{"learn":"passwordknown"},
+					{"say,dbrown":"544"},
+					{"endif":""},
+					{"endif":""}
+],			"use":[
+					{"say":"541"}
+]}],"item3":[{
+			"lookat":[
+					{"reach":"item3"},
+					{"ifnear":"item3"},
+					{"say":"532"},
+					{"ifknown":"marcossequence"},
+					{"say":"545"},
+					{"say,dbrown":"546"},
+					{"say":"547"},
+					{"say,dbrown":"548"},
+					{"endif":""},
+					{"endif":""}
+],			"use":[
+					{"say":"541"}
+]}],"history":[{
+			"lookat":[
+					{"reach":"history"},
+					{"ifnear":"history"},
+					{"say":"549"},
+					{"say":"550"},
+					{"say":"551"},
+					{"say":"552"},
+					{"say":"553"},
+					{"say":"554"},
+					{"say":"555"},
+					{"say,dbrown":"556"},
+					{"endif":""}
+],			"use":[
+					{"say,museumemployee":"557"}
+]}]}],
+"west_rstation":[{
+			"desc":"73",
+"_":[{
+			"onentershow":[
+					{"ifknown":"takingfishcheck"},
+					{"forget":"takingfish"},
+					{"forget":"takingfishcheck"},
+					{"learn":"hasfishsupplies"},
+					{"endif":""}
+],			"onmusic":[
+					{"playmusic":"west_rstation"}
+]}],"fshopper":[{
+			"talkto":[
+					{"say,me,fshopper":"85"},
+					{"say,fshopper,me":"128"},
+					{"newdialog":""},
+					{"addline,!once_85":"287"},
+{"learn":"once_85"},
+					{"say,fshopper":"558"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"559"},
+					{"ifknown":"hasfishsupplies"},
+					{"say,fshopper":"560"},
+					{"say":"20"},
+					{"ifnottaken":"currysauce"},
+					{"say,fshopper":"561"},
+					{"take":"currysauce"},
+					{"endif":""},
+					{"ifnottaken":"fishnchips"},
+					{"take":"fishnchips"},
+					{"else":""},
+					{"say":"562"},
+					{"playanim":"eat"},
+					{"say":"563"},
+					{"endif":""},
+					{"else":""},
+					{"say,fshopper":"564"},
+					{"learn":"needfishsupply"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,needfishsupply+factotum+!hasfishsupplies":"565"},
+					{"say,fshopper":"566"},
+					{"say,dbrown":"567"},
+					{"say,fshopper":"568"},
+					{"setsuffix,fshopper":"cell"},
+					{"say,fshopper":"569"},
+					{"say,fshopper":"570"},
+					{"setsuffix,fshopper":"_"},
+					{"say,fshopper":"571"},
+					{"learn":"takingfish"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,specialcurry+!once_86":"572"},
+{"learn":"!once_86"},
+					{"say,fshopper":"573"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,specialcurry+!once_87":"574"},
+{"learn":"!once_87"},
+					{"say,fshopper":"575"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"20"},
+					{"say,fshopper":"322"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}],"curry":[{
+			"use":[
+					{"say,fshopper":"576"},
+					{"learn":"specialcurry"},
+					{"say,fshopper":"577"}
+],			"lookat":[
+					{"say":"578"}
+]}],"mapholder":[{
+			"use":[
+					{"ifhave":"west_map"},
+					{"say":"579"},
+					{"else":""},
+					{"moveto":"mapholder+20"},
+					{"faceto":"mapholder"},
+					{"say":"580"},
+					{"playanim":"takehi"},
+					{"take":"west_map"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"581"}
+]}],"menu":[{
+			"lookat":[
+					{"say":"582"},
+					{"say,fshopper":"583"}
+],			"use":[
+					{"say":"584"}
+]}],"sign":[{
+			"lookat":[
+					{"say":"585"}
+]}]}],
+"west_upperroad":[{
+			"desc":"97",
+"_":[{
+			"onmusic":[
+					{"playmusic":"west_street"}
+]}],"west_mgarden":[{
+			"moveto":[
+					{"say":"586"},
+					{"ifonce":"once_90"},
+					{"say,dbrown":"587"},
+					{"learn":"dbrownmansion"},
+					{"endif":""}
+]}],"sign":[{
+			"lookat":[
+					{"say":"588"},
+					{"say,dbrown":"589"}
+]}]}],
+"east_carpentry":[{
+			"desc":"116",
+"_":[{
+			"onfirst":[
+					{"faceto,rlstine":"left,lock"},
+					{"enterfrom":"east_downtown"},
+					{"say":"85"},
+					{"moveto,rlstine":"marco-40"},
+					{"say,rlstine,marco":"590"},
+					{"say":"591"},
+					{"say,rlstine,marco":"592"},
+					{"moveto,rlstine":"woodbench+20"},
+					{"faceto,rlstine":"left,lock"}
+],			"onmusic":[
+					{"playmusic":"east_mainloopfast"}
+]}],"puppet":[{
+			"talkto":[
+					{"ifleader,puppet":"marco"},
+					{"say":"593"},
+					{"else":""},
+					{"say":"594"},
+					{"endif":""}
+],			"usewith_wand":[
+					{"reach":"puppet"},
+					{"faceto":"puppet"},
+					{"ifstatus":"wand,feathered"},
+					{"ifleader,puppet":"marco"},
+					{"say":"133"},
+					{"say":"134"},
+					{"setleader,puppet":"_"},
+					{"else":""},
+					{"say":"135"},
+					{"reach,puppet":"marco"},
+					{"say":"136"},
+					{"setleader,puppet":"me"},
+					{"endif":""},
+					{"else":""},
+					{"say":"595"},
+					{"say,me,jkrowling":"596"},
+					{"say,jkrowling":"597"},
+					{"say,rlstine":"598"},
+					{"say":"188"},
+					{"say,jkrowling":"599"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"600"}
+],			"usewith_feather":[
+					{"moveto":"puppet"},
+					{"faceto":"puppet"},
+					{"playanim":"take"},
+					{"say":"601"}
+]}],"tools":[{
+			"lookat":[
+					{"say":"602"}
+],			"use":[
+					{"ifnottaken":"awl"},
+					{"say":"603"},
+					{"playanim":"takehi"},
+					{"take":"awl"},
+					{"setstatus":"tools,noawl"},
+					{"else":""},
+					{"say":"604"},
+					{"endif":""}
+]}],"woodbench":[{
+			"lookat":[
+					{"say":"605"}
+],			"use":[
+					{"ifnottaken":"saw"},
+					{"ifknown":"needsaw"},
+					{"say":"606"},
+					{"take":"saw"},
+					{"setstatus":"woodbench,nosaw"},
+					{"else":""},
+					{"say":"607"},
+					{"endif":""},
+					{"else":""},
+					{"say":"604"},
+					{"endif":""}
+]}],"rlstine":[{
+			"talkto":[
+					{"ifroom,jkrowling":"here"},
+					{"newdialog":""},
+					{"addline,theresamonster+!once_91+!monsterdefeated":"608"},
+{"learn":"!once_91"},
+					{"say,rlstine":"609"},
+					{"say":"610"},
+					{"say,rlstine":"611"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,monsterdefeated":"612"},
+					{"say,rlstine":"613"},
+					{"say":"614"},
+					{"say,rlstine":"615"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!monsterdefeated":"616"},
+					{"ifknown":"perceivehumans"},
+					{"say,rlstine":"617"},
+					{"say":"618"},
+					{"say,rlstine":"619"},
+					{"say,jkrowling,me":"620"},
+					{"learn":"puppetisthekey"},
+					{"else":""},
+					{"say,rlstine":"621"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"622"},
+					{"say,rlstine":"623"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""},
+					{"else":""},
+					{"newdialog":""},
+					{"addline,collectauthors+!once_92":"624"},
+{"learn":"!once_92"},
+					{"say,rlstine,marco":"625"},
+					{"say":"232"},
+					{"say,rlstine":"626"},
+					{"say":"64"},
+					{"learn":"rlstineadvised"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,theyattackme":"627"},
+					{"say,rlstine,marco":"628"},
+					{"say":"629"},
+					{"say,rlstine":"630"},
+					{"say,rlstine":"631"},
+					{"say,rlstine":"632"},
+					{"say":"633"},
+					{"say,rlstine":"634"},
+					{"say":"635"},
+					{"say,rlstine":"64"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!once_93":"636"},
+{"learn":"once_93"},
+					{"say,rlstine,marco":"637"},
+					{"say":"638"},
+					{"say,rlstine,marco":"639"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"640"},
+					{"say,rlstine,marco":"641"},
+					{"say":"642"},
+					{"say,rlstine,marco":"643"},
+					{"say":"644"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"622"},
+					{"say,rlstine":"623"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""},
+					{"endif":""}
+],			"usewith_jar":[
+					{"say,rlstine":"645"},
+					{"say":"646"},
+					{"say,rlstine":"647"}
+]}],"wood":[{
+			"lookat":[
+					{"say":"648"}
+],			"use":[
+					{"ifknown":"needwand"},
+					{"ifnottaken":"wand"},
+					{"say":"649"},
+					{"else":""},
+					{"say":"650"},
+					{"endif":""},
+					{"else":""},
+					{"say":"651"},
+					{"endif":""}
+]}],"jkrowling":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline,theresamonster+!once_94+!monsterdefeated":"608"},
+{"learn":"!once_94"},
+					{"say,jkrowling":"652"},
+					{"say":"610"},
+					{"say,jkrowling":"653"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,monsterdefeated":"612"},
+					{"say,jkrowling":"613"},
+					{"say":"614"},
+					{"say,jkrowling":"615"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!monsterdefeated":"654"},
+					{"ifknown":"perceivehumans+puppetisthekey+!needwand"},
+					{"say,jkrowling":"655"},
+					{"say":"188"},
+					{"say,jkrowling":"656"},
+					{"say,jkrowling":"657"},
+					{"say":"507"},
+					{"say,jkrowling":"658"},
+					{"say":"659"},
+					{"learn":"needwand"},
+					{"else":""},
+					{"say,jkrowling":"660"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,needpearls+!once_95":"661"},
+{"learn":"!once_95"},
+					{"say,jkrowling":"662"},
+					{"say":"663"},
+					{"say,jkrowling":"664"},
+					{"say":"665"},
+					{"moveto,jkrowling":"me"},
+					{"setanim,jkrowling":"take"},
+					{"setanim,me":"take"},
+					{"wait":"500"},
+					{"setanim,jkrowling":"_"},
+					{"setanim,me":"_"},
+					{"setstatus":"jar,pearlfilled"},
+					{"say":"666"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"384"},
+					{"say,jkrowling":"384"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+],			"usewith_wand":[
+					{"say,jkrowling":"667"},
+					{"ifstatus":"wand,feathered"},
+					{"else":""},
+					{"say,jkrowling":"668"},
+					{"endif":""}
+],			"usewith_feather":[
+					{"say,jkrowling":"669"}
+],			"usewith_jar":[
+					{"say,jkrowling":"645"},
+					{"say":"646"},
+					{"say,jkrowling":"647"}
+]}]}],
+"east_cave":[{
+			"desc":"68",
+"_":[{
+			"onconfig":[
+					{"hideobj":"submarine"}
+],			"onmusic":[
+					{"playmusic":"cave"}
+]}],"_from":[{
+			"east_lighthouse":[
+					{"setpos,jverne":"102"},
+					{"setpos":"140"}
+],			"east_submarine":[
+					{"setpos,jverne":"490"},
+					{"setpos":"460"}
+]}],"lever":[{
+			"use":[
+					{"say":"670"},
+					{"reach":"lever"},
+					{"playanim":"take"},
+					{"ifstatus":"lever,hilighted"},
+					{"setstatus":"lever,pulled"},
+					{"learn":"submarineup"},
+					{"setstatus":"submarine,visible"},
+					{"showobj":"submarine"},
+					{"say":"671"},
+					{"else":""},
+					{"ifstatus":"lever,pulled"},
+					{"setstatus":"lever,hilighted"},
+					{"hideobj":"submarine"},
+					{"say":"672"},
+					{"else":""},
+					{"say":"673"},
+					{"endif":""},
+					{"endif":""}
+],			"lookat":[
+					{"say":"674"}
+]}],"submarine":[{
+			"use":[
+					{"loadroom":"east_submarine"}
+],			"lookat":[
+					{"say":"675"}
+]}],"panel":[{
+			"use":[
+					{"reach":"panel"},
+					{"ifstatus":"lever,hilighted"},
+					{"say":"676"},
+					{"else":""},
+					{"ifknown":"symbolsequencefoundandsent"},
+					{"say":"677"},
+					{"playanim":"take"},
+					{"say":"678"},
+					{"setstatus":"lever,hilighted"},
+					{"else":""},
+					{"say":"679"},
+					{"playanim":"take"},
+					{"say,jverne":"680"},
+					{"say":"681"},
+					{"endif":""},
+					{"endif":""}
+],			"lookat":[
+					{"say":"682"},
+					{"learn":"symbolsequencefound"}
+]}],"boat":[{
+			"use":[
+					{"moveto":"boat"},
+					{"loadroom":"east_lighthouse"}
+],			"lookat":[
+					{"say":"683"}
+]}],"east_map":[{
+			"use":[
+					{"say":"684"}
+]}],"sign":[{
+			"lookat":[
+					{"say":"685"},
+					{"say,jverne":"686"}
+],			"use":[
+					{"say":"687"}
+]}],"jverne":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline":"688"},
+					{"say,jverne":"689"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"64"},
+					{"say,jverne":"64"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}]}],
+"east_dhanhouse":[{
+			"desc":"129",
+"_":[{
+			"onmusic":[
+					{"playmusic":"east_mainloop"}
+]}],"dhan":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline":"690"},
+					{"say,dhan":"691"},
+					{"say":"692"},
+					{"say,dhan":"693"},
+					{"say":"694"},
+					{"say,dhan":"695"},
+					{"say":"696"},
+					{"say,dhan":"697"},
+					{"learn":"dhanmaster"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,dhanmaster+!once_96":"698"},
+{"learn":"!once_96"},
+					{"say,dhan":"699"},
+					{"say":"700"},
+					{"say,dhan":"701"},
+					{"say":"702"},
+					{"learn":"wanttoknow"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,wanttoknow":"703"},
+					{"say,dhan":"704"},
+					{"say,dhan":"705"},
+					{"say,dhan":"706"},
+					{"say,dhan":"707"},
+					{"say,dhan":"708"},
+					{"say,dhan":"709"},
+					{"learn":"machines"},
+					{"say":"615"},
+					{"say,dhan":"710"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,wanttoknow":"711"},
+					{"say,dhan":"712"},
+					{"say,dhan":"713"},
+					{"say,dhan":"714"},
+					{"say,dhan":"715"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,wanttoknow":"716"},
+					{"say,dhan":"717"},
+					{"say,dhan":"718"},
+					{"say":"719"},
+					{"say,dhan":"720"},
+					{"learn":"planthatecurry"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,machines":"721"},
+					{"say,dhan":"722"},
+					{"say":"723"},
+					{"say,dhan":"724"},
+					{"ifnottaken":"boatkey"},
+					{"say,dhan":"725"},
+					{"say":"726"},
+					{"take":"boatkey"},
+					{"say":"20"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,needlure":"727"},
+					{"say,dhan":"728"},
+					{"learn":"needpearls"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"384"},
+					{"say,dhan":"384"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+],			"usewith_jar":[
+					{"say":"729"},
+					{"say,dhan":"730"},
+					{"say":"731"},
+					{"say,dhan":"732"},
+					{"say":"20"},
+					{"learn":"needpearls"}
+]}],"plant":[{
+			"use":[
+					{"ifknown":"planthatecurry"},
+					{"ifnottaken":"curryleaves"},
+					{"say":"733"},
+					{"say,dhan":"734"},
+					{"playanim":"takelow"},
+					{"say":"735"},
+					{"take":"curryleaves"},
+					{"else":""},
+					{"say":"736"},
+					{"endif":""},
+					{"else":""},
+					{"say":"737"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"738"},
+					{"say,dhan":"739"}
+]}],"oil":[{
+			"use":[
+					{"ifknown":"planthatecurry"},
+					{"say":"740"},
+					{"say,dhan":"741"},
+					{"say":"20"},
+					{"playanim":"takehi"},
+					{"take":"curryoil"},
+					{"hideobj":"oil"},
+					{"else":""},
+					{"say,dhan":"742"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"743"},
+					{"say,dhan":"744"}
+]}],"boatkey":[{
+			"use":[
+					{"say":"745"},
+					{"playanim":"takelow"},
+					{"take":"boatkey"},
+					{"hideobj":"boatkey"}
+],			"lookat":[
+					{"say":"746"},
+					{"say,dhan":"747"}
+]}]}],
+"east_downtown":[{
+			"desc":"65",
+"_":[{
+			"onconfig":[
+					{"setblock":"eapoe+40,greetings"},
+					{"setblock":"fishman2,fishW1"},
+					{"setblock":"fishman4,fishE"},
+					{"setroomstatus":"notawriter"}
+],			"onconfigupdate":[
+					{"ifknown":"fightstarted+!once_97"},
+{"learn":"!once_97"},
+					{"showobj":"deadtrekker1"},
+					{"setroomstatus":"fightstarted"},
+					{"setroom,fishman1":"void"},
+					{"setroom,fishman2":"void"},
+					{"setroom,fishman3":"void"},
+					{"setroom,fishman4":"void"},
+					{"setroom,trekker3":"void"},
+					{"endif":""}
+],			"onmusic":[
+					{"playmusic":"east_harbour"}
+]}],"onstatus_notawriter":[{
+"east_fpathwest":[{
+					"desc":"72",
+			"moveto":[
+						{"setsuffix,fishman4":"point"},
+						{"say,fishman1,marco":"748"},
+						{"setsuffix,fishman4":"_"},
+						{"say":"749"}
+]}],"east_upperroad":[{
+					"desc":"97",
+			"moveto":[
+						{"setsuffix,fishman3":"point"},
+						{"say,fishman1,marco":"748"},
+						{"setsuffix,fishman3":"_"},
+						{"say":"749"}
+]}],"east_lighthouse":[{
+					"desc":"64",
+			"moveto":[
+						{"setsuffix,fishman4":"point"},
+						{"say,fishman1,marco":"748"},
+						{"setsuffix,fishman4":"_"},
+						{"say":"749"}
+]}],"_":[{
+			"onalert_fishE":[
+						{"ifhave":"crystalsneakers"},
+						{"say,fishman4,marco":"750"},
+						{"say":"751"},
+						{"say,fishman2,marco":"752"},
+						{"say":"753"},
+						{"setroomstatus":"almostawriter"},
+						{"unsetblock":"fishman2"},
+						{"unsetblock":"fishman4"},
+						{"else":""},
+						{"setsuffix":"stressed"},
+						{"say,fishman4,marco":"748"},
+						{"setsuffix":"_"},
+						{"ifonce":"once_100"},
+						{"learn":"theyattackme"},
+						{"say":"754"},
+						{"endif":""},
+						{"endif":""}
+],			"onalert_fishW":[
+						{"ifhave":"crystalsneakers"},
+						{"say,fishman2,marco":"750"},
+						{"say":"751"},
+						{"say,fishman2,marco":"752"},
+						{"say":"753"},
+						{"setroomstatus":"almostawriter"},
+						{"unsetblock":"fishman2"},
+						{"unsetblock":"fishman4"},
+						{"else":""},
+						{"setsuffix":"stressed"},
+						{"say,fishman2,marco":"748"},
+						{"setsuffix":"_"},
+						{"ifonce":"once_103"},
+						{"learn":"theyattackme"},
+						{"say":"754"},
+						{"endif":""},
+						{"endif":""}
+],			"onalert_fishW1":[
+						{"say,fishman2,marco":"748"},
+						{"say":"755"},
+						{"say,fishman2,marco":"756"},
+						{"unsetblock":"fishman2"},
+						{"moveto":"174"},
+						{"moveto,fishman2":"45"},
+						{"setblock":"fishman2,fishW"}
+],			"onalert_greetings":[
+						{"call":"greetings"}
+]}],"eapoe":[{
+			"talkto":[
+						{"call":"greetings"}
+]}]}],"deadtrekker1":[{
+}],"trekker3":[{
+			"talkto":[
+					{"say,me,trekker3":"85"},
+					{"ifonce":"once_106"},
+					{"say,trekker3,me":"757"},
+					{"say":"278"},
+					{"say,trekker3":"758"},
+					{"say":"759"},
+					{"say,trekker3":"760"},
+					{"say":"20"},
+					{"say,trekker3":"761"},
+					{"say":"762"},
+					{"endif":""},
+					{"say,trekker3":"763"},
+					{"newdialog":""},
+					{"addline,theresamonster+!once_107+!monsterdefeated":"608"},
+{"learn":"!once_107"},
+					{"say,trekker3":"764"},
+					{"say":"765"},
+					{"say,trekker3":"766"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!once_108":"767"},
+{"learn":"once_108"},
+					{"say,trekker3":"768"},
+					{"say":"769"},
+					{"say,trekker3":"770"},
+					{"ifonce":"once_111"},
+					{"say":"771"},
+					{"say,trekker3":"772"},
+					{"say":"773"},
+					{"say,trekker3":"774"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"775"},
+					{"say,trekker3":"776"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"777"},
+					{"say,trekker3":"778"},
+					{"ifknown":"fightstarted"},
+					{"say,trekker3":"779"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"780"},
+					{"say,trekker3":"781"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}],"onstatus_almostawriter":[{
+"east_upperroad":[{
+					"desc":"97",
+			"moveto":[
+						{"setsuffix,fishman3":"point"},
+						{"say,fishman1,marco":"748"},
+						{"setsuffix,fishman3":"_"},
+						{"say":"749"}
+]}]}],"onstatus_fightstarted":[{
+"grrmartin":[{
+			"talkto":[
+						{"newdialog":""},
+						{"addline,!once_112":"782"},
+{"learn":"once_112"},
+						{"say,grrmartin":"783"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline,monsterdefeated":"612"},
+						{"say,grrmartin":"784"},
+						{"say":"785"},
+						{"say,grrmartin":"786"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline,theresamonster+!once_113+!monsterdefeated":"608"},
+{"learn":"!once_113"},
+						{"say,grrmartin":"787"},
+						{"say":"785"},
+						{"say,grrmartin":"786"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline,!once_114":"654"},
+{"learn":"once_114"},
+						{"say,grrmartin":"788"},
+						{"say":"789"},
+						{"say,grrmartin":"278"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"790"},
+						{"say,grrmartin":"791"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline,georgewrotethat":"792"},
+						{"say,grrmartin":"793"},
+						{"say":"188"},
+						{"say,grrmartin":"794"},
+						{"learn":"timetalkrule2"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"780"},
+						{"say,grrmartin":"795"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""}
+]}],"deadtrekker1":[{
+					"desc":"135",
+			"use":[
+						{"say":"796"}
+]}],"east_trekcon":[{
+			"moveto":[
+						{"ifleader,puppet":"marco"},
+						{"say":"797"},
+						{"else":""},
+						{"ifonce":"once_117"},
+						{"say":"85"},
+						{"say,#fb6767":"798"},
+						{"say":"799"},
+						{"say,#fb6767":"800"},
+						{"say":"801"},
+						{"say,#fb6767":"802"},
+						{"loadroom":"east_trekcon"},
+						{"else":""},
+						{"say":"85"},
+						{"say,#fb6767":"85"},
+						{"say":"803"},
+						{"loadroom":"east_trekcon"},
+						{"endif":""},
+						{"endif":""}
+]}],"east_fpath":[{
+					"desc":"72",
+			"moveto":[
+						{"ifleader,puppet":"marco"},
+						{"say":"797"},
+						{"else":""},
+						{"loadroom":"east_fpath"},
+						{"endif":""}
+]}],"east_hotelhall":[{
+					"desc":"74",
+			"moveto":[
+						{"ifleader,puppet":"marco"},
+						{"say":"797"},
+						{"else":""},
+						{"loadroom":"east_hotelhall"},
+						{"endif":""}
+]}],"east_lighthouse":[{
+					"desc":"64",
+			"moveto":[
+						{"ifleader,puppet":"marco"},
+						{"say":"797"},
+						{"else":""},
+						{"loadroom":"east_lighthouse"},
+						{"endif":""}
+]}]}],"fishman2":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline,isitamask":"804"},
+					{"say,fishman2":"805"},
+					{"say":"806"},
+					{"say,fishman2":"805"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"807"},
+					{"say,fishman2":"808"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,theyattackme":"809"},
+					{"say,fishman2":"810"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"811"},
+					{"say,fishman2":"805"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}],"fishman3":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline,isitamask":"804"},
+					{"say,fishman3":"805"},
+					{"say":"806"},
+					{"say,fishman3":"805"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"807"},
+					{"say,fishman3":"808"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,theyattackme":"809"},
+					{"say,fishman3":"810"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"811"},
+					{"say,fishman3":"805"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}],"fishman4":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline,isitamask":"804"},
+					{"say,fishman4":"805"},
+					{"say":"806"},
+					{"say,fishman4":"805"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"807"},
+					{"say,fishman4":"808"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,theyattackme":"809"},
+					{"say,fishman4":"810"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"811"},
+					{"say,fishman4":"805"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}]}],
+"east_fpath":[{
+			"desc":"72",
+"_":[{
+			"onfirst":[
+					{"call":"gamestart"},
+					{"call":"marcostart"},
+					{"moveto":"355"},
+					{"say,fishman1,marco":"748"},
+					{"say,marco":"812"},
+					{"say,fishman1,marco":"748"},
+					{"say,marco":"813"},
+					{"showobj":"plantdoor"},
+					{"setblock":"plantdoor+25,bridgeblocked"},
+					{"setblock":"fishman1,nopassnoparty"}
+],			"onalert_nopassnoparty":[
+					{"setsuffix,fishman1":"point"},
+					{"say,fishman1,marco":"748"},
+					{"setsuffix,fishman1":"_"},
+					{"say":"814"}
+],			"onalert_bridgeblocked":[
+					{"call":"plantdoorfirst"},
+					{"forget":"messages"},
+					{"call":"plantphone1"},
+					{"call":"plantphone2"},
+					{"ifknown":"!messages"},
+					{"ifonce":"once_120"},
+					{"say":"815"},
+					{"else":""},
+					{"say":"816"},
+					{"endif":""},
+					{"endif":""}
+],			"onmusic":[
+					{"playmusic":"east_forest"}
+]}],"fishman1":[{
+			"usewith_daninvitation":[
+					{"moveto,marco":"fishman1"},
+					{"setanim,marco":"take"},
+					{"setanim,fishman1":"take"},
+					{"wait":"500"},
+					{"setanim,marco":"_"},
+					{"setanim,fishman1":"_"},
+					{"drop":"daninvitation"},
+					{"say,fishman1,marco":"817"},
+					{"say":"818"},
+					{"setsuffix,fishman1":"examine"},
+					{"say,fishman1,marco":"805"},
+					{"setsuffix,fishman1":"_"},
+					{"playanim,fishman1":"eat"},
+					{"say":"819"},
+					{"say,fishman1,marco":"805"},
+					{"say":"820"},
+					{"unsetblock":"fishman1"}
+],			"talkto":[
+					{"newdialog":""},
+					{"addline":"821"},
+					{"say,fishman1":"805"},
+					{"learn":"isitamask"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,isitamask":"804"},
+					{"say,fishman1":"805"},
+					{"say":"806"},
+					{"say,fishman1":"805"},
+					{"say":"822"},
+					{"say,fishman1":"805"},
+					{"say":"823"},
+					{"say,fishman1":"805"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"824"},
+					{"say,fishman1":"805"},
+					{"say":"825"},
+					{"say,fishman1":"805"},
+					{"say":"826"},
+					{"say,fishman1":"805"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"807"},
+					{"say,fishman1":"808"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"811"},
+					{"say,fishman1":"805"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}],"plantdoor":[{
+			"lookat":[
+					{"call":"plantdoorfirst"},
+					{"forget":"messages"},
+					{"call":"plantphone1"},
+					{"call":"plantphone2"},
+					{"ifknown":"!messages"},
+					{"say":"827"},
+					{"endif":""}
+],			"use":[
+					{"say":"828"}
+]}],"cutbranches":[{
+			"lookat":[
+					{"say":"829"}
+],			"use":[
+					{"ifknown":"needwand"},
+					{"ifnottaken":"wand"},
+					{"say":"830"},
+					{"playanim":"takelow"},
+					{"take":"wand"},
+					{"else":""},
+					{"say":"831"},
+					{"endif":""},
+					{"else":""},
+					{"say":"832"},
+					{"endif":""}
+]}],"diary":[{
+			"lookat":[
+					{"say":"833"}
+],			"use":[
+					{"playanim":"takelow"},
+					{"take":"diary"},
+					{"hideobj":"diary"}
+]}],"hand":[{
+			"lookat":[
+					{"say":"834"}
+],			"use":[
+					{"playanim":"takelow"},
+					{"take":"guidohand"},
+					{"hideobj":"hand"}
+]}]}],
+"east_fpathwest":[{
+			"desc":"72",
+"_":[{
+			"onconfig":[
+					{"setblock":"capitano,cantgotonahn"},
+					{"call":"fpathtalkstart"}
+],			"onconfigupdate":[
+					{"ifknown":"fightstarted+!once_121"},
+{"learn":"!once_121"},
+					{"setroom,capitano":"void"},
+					{"unsetblock":"capitano"},
+					{"endif":""}
+],			"onalert_cantgotonahn":[
+					{"call":"fpathtalkstop"},
+					{"say,capitano":"835"},
+					{"call":"fpathtalkstart"}
+],			"onmusic":[
+					{"playmusic":"east_forest"}
+]}],"statue":[{
+			"usewith_awl":[
+					{"reach":"statue"},
+					{"ifnear":"statue"},
+					{"ifknown":"timetalkrule1+timetalkrule2"},
+					{"ifknown":"!sharedtimetalktules"},
+					{"say":"836"},
+					{"reach":"statue"},
+					{"say":"837"},
+					{"say":"838"},
+					{"wait":"1000"},
+					{"playanim":"take"},
+					{"say":"839"},
+					{"say":"840"},
+					{"learn":"sharedtimetalktules"},
+					{"else":""},
+					{"ifknown":"heardback"},
+					{"ifknown":"stefywantpassword+!marcospassword"},
+					{"say":"841"},
+					{"say":"842"},
+					{"say":"843"},
+					{"reach":"statue"},
+					{"playanim":"take"},
+					{"learn":"marcospassword"},
+					{"endif":""},
+					{"ifknown":"stefywantpassword+!marcossequence"},
+					{"reach":"statue"},
+					{"say":"844"},
+					{"playanim":"take"},
+					{"learn":"marcossequence"},
+					{"endif":""},
+					{"else":""},
+					{"say":"845"},
+					{"endif":""},
+					{"endif":""},
+					{"else":""},
+					{"say":"846"},
+					{"endif":""},
+					{"endif":""}
+],			"lookat":[
+					{"say":"847"},
+					{"ifnear":"statue"},
+					{"say":"848"},
+					{"learn":"georgewrotethat"},
+					{"endif":""}
+],			"use":[
+					{"ifknown":"timetalkrule1+timetalkrule2+!sharedtimetalktules"},
+					{"say":"849"},
+					{"say":"850"},
+					{"say":"851"},
+					{"else":""},
+					{"say":"852"},
+					{"endif":""}
+]}],"capitano":[{
+			"talkto":[
+					{"call":"fpathtalkstop"},
+					{"say,capitano":"853"},
+					{"call":"fpathtalkstart"}
+]}],"esalgari":[{
+			"talkto":[
+					{"call":"fpathtalkstop"},
+					{"newdialog":""},
+					{"addline,!once_122":"854"},
+{"learn":"once_122"},
+					{"say,esalgari,marco":"855"},
+					{"say":"856"},
+					{"say,esalgari":"857"},
+					{"say":"858"},
+					{"say,esalgari":"859"},
+					{"learn":"recognizedsalgari"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,recognizedsalgari":"860"},
+					{"say,esalgari,marco":"861"},
+					{"say":"862"},
+					{"say,esalgari,marco":"863"},
+					{"say":"864"},
+					{"say,esalgari,marco":"865"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,collectauthors+recognizedsalgari+!once_123":"624"},
+{"learn":"!once_123"},
+					{"say,esalgari,marco":"866"},
+					{"say":"867"},
+					{"say,esalgari":"868"},
+					{"say":"64"},
+					{"learn":"esalgariadvised"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"869"},
+					{"say,esalgari":"384"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""},
+					{"call":"fpathtalkstart"}
+]}]}],
+"east_hotelcorridor":[{
+			"desc":"148",
+"_":[{
+			"onmusic":[
+					{"playmusic":"east_mainloopfx"}
+]}],"east_hotelroom1":[{
+			"moveto":[
+					{"ifknown":"ofeliaunlocked"},
+					{"loadroom":"east_hotelroom1"},
+					{"else":""},
+					{"say":"870"},
+					{"endif":""}
+],			"usewith_ofeliakey":[
+					{"ifknown":"ofeliaunlocked"},
+					{"say":"871"},
+					{"else":""},
+					{"moveto":"east_hotelroom1"},
+					{"playanim":"take"},
+					{"drop":"ofeliakey"},
+					{"learn":"ofeliaunlocked"},
+					{"say":"872"},
+					{"endif":""}
+]}],"east_hotelroom2":[{
+			"moveto":[
+					{"ifknown":"veniceunlocked"},
+					{"loadroom":"east_hotelroom2"},
+					{"else":""},
+					{"say":"870"},
+					{"endif":""}
+],			"usewith_venicekey":[
+					{"ifknown":"veniceunlocked"},
+					{"say":"871"},
+					{"else":""},
+					{"moveto":"east_hotelroom2"},
+					{"playanim":"take"},
+					{"drop":"venicekey"},
+					{"learn":"veniceunlocked"},
+					{"say":"872"},
+					{"endif":""}
+]}],"sking":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline,theresamonster+!once_124+!monsterdefeated":"608"},
+{"learn":"!once_124"},
+					{"say,sking":"873"},
+					{"say":"874"},
+					{"say,sking":"875"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,monsterdefeated":"612"},
+					{"say,rlstine":"613"},
+					{"say":"614"},
+					{"say,rlstine":"615"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!once_125":"876"},
+{"learn":"once_125"},
+					{"say,sking,marco":"877"},
+					{"say":"878"},
+					{"say,sking":"879"},
+					{"say":"880"},
+					{"say,sking":"881"},
+					{"ifnottaken":"novel"},
+					{"say,sking":"882"},
+					{"say":"26"},
+					{"moveto,sking":"me"},
+					{"setanim,sking":"take"},
+					{"setanim,me":"take"},
+					{"wait":"500"},
+					{"setanim,sking":"_"},
+					{"setanim,me":"_"},
+					{"take":"novel"},
+					{"endif":""},
+					{"say,sking":"883"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!once_126":"654"},
+{"learn":"once_126"},
+					{"say,sking,marco":"884"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"885"},
+					{"say,sking,marco":"886"},
+					{"say,marco,sking":"887"},
+					{"say,sking,marco":"888"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"889"},
+					{"say,sking":"384"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+]}],"library":[{
+			"lookat":[
+					{"say":"890"}
+],			"use":[
+					{"say":"891"}
+]}]}],
+"east_hotellounge":[{
+			"desc":"151",
+"_":[{
+			"onconfig":[
+					{"setroomstatus":"start"},
+					{"setsuffix,sking":"drink"},
+					{"setsuffix,jkrowling":"drink"},
+					{"call":"loungetalkstart"}
+],			"onmusic":[
+					{"playmusic":"east_mainloopfx"}
+]}],"onstatus_start":[{
+"jkrowling":[{
+			"talkto":[
+						{"call":"loungetalkstop"},
+						{"say,jkrowling,marco":"90"},
+						{"newdialog":""},
+						{"addline":"13"},
+						{"say,jkrowling":"892"},
+						{"say":"15"},
+						{"say,sking":"893"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"384"},
+						{"say,jkrowling":"384"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""},
+						{"call":"loungetalkstart"}
+]}],"sking":[{
+			"talkto":[
+						{"call":"loungetalkstop"},
+						{"say,sking,marco":"90"},
+						{"newdialog":""},
+						{"addline":"13"},
+						{"say,sking":"894"},
+						{"say":"15"},
+						{"say,sking":"895"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"384"},
+						{"say,sking":"384"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""},
+						{"call":"loungetalkstart"}
+]}],"eapoe":[{
+			"talkto":[
+						{"say,eapoe,marco":"2"},
+						{"ifknown":"rlstineadvised+grrmartinadvised+jverneadvised+esalgariadvised"},
+						{"say,marco,eapoe":"896"},
+						{"say,eapoe,marco":"4"},
+						{"setsuffix,eapoe":"_"},
+						{"say,eapoe,marco":"897"},
+						{"call":"loungetalkstop"},
+						{"setroomstatus":"ready"},
+						{"setroom,rlstine":"here,230"},
+						{"amoveto,rlstine":"171"},
+						{"say,eapoe,marco":"898"},
+						{"wait":"1200"},
+						{"setroom,grrmartin":"here,230"},
+						{"amoveto,grrmartin":"200"},
+						{"say,eapoe,marco":"899"},
+						{"moveto,marco":"130"},
+						{"moveto,marco":"120"},
+						{"setroom,esalgari":"here,230"},
+						{"amoveto,esalgari":"250"},
+						{"setsuffix,sking":"_"},
+						{"setsuffix,jkrowling":"_"},
+						{"amoveto,sking":"294"},
+						{"amoveto,jkrowling":"274"},
+						{"wait":"800"},
+						{"setroom,hplovecraft":"here,230"},
+						{"moveto,hplovecraft":"80"},
+						{"say,eapoe,hplovecraft":"900"},
+						{"say,hplovecraft,marco":"901"},
+						{"say,grrmartin,hplovecraft":"902"},
+						{"say,hplovecraft,marco":"903"},
+						{"say,rlstine,hplovecraft":"904"},
+						{"say,hplovecraft,marco":"905"},
+						{"say,jkrowling,hplovecraft":"906"},
+						{"say,hplovecraft,jkrowling":"907"},
+						{"say,sking,hplovecraft":"908"},
+						{"say,hplovecraft,jkrowling":"909"},
+						{"say,eapoe,jkrowling":"910"},
+						{"say,hplovecraft,jkrowling":"911"},
+						{"say,eapoe,marco":"912"},
+						{"say,hplovecraft,jkrowling":"913"},
+						{"say,sking":"914"},
+						{"say,rlstine":"915"},
+						{"say,marco":"916"},
+						{"say,hplovecraft":"917"},
+						{"say,#FFFF80":"918"},
+						{"say,marco":"919"},
+						{"say,grrmartin":"920"},
+						{"say,hplovecraft":"921"},
+						{"moveto,rlstine":"230"},
+						{"setroom,rlstine":"east_carpentry,210"},
+						{"moveto,grrmartin":"230"},
+						{"setroom,grrmartin":"east_downtown,732"},
+						{"moveto,sking":"230"},
+						{"setroom,sking":"east_hotelcorridor,90"},
+						{"moveto,jkrowling":"230"},
+						{"setroom,jkrowling":"east_carpentry,310"},
+						{"moveto,esalgari":"marco+30"},
+						{"say,esalgari":"922"},
+						{"say,marco,esalgari":"923"},
+						{"say,esalgari":"924"},
+						{"say,eapoe":"925"},
+						{"learn":"fightstarted"},
+						{"else":""},
+						{"say,marco,eapoe":"5"},
+						{"say,eapoe,marco":"6"},
+						{"endif":""}
+]}]}],"onstatus_ready":[{
+"eapoe":[{
+			"talkto":[
+						{"say,eapoe":"90"},
+						{"ifroomstatus,east_upperroad":"mansionlocked"},
+						{"call":"monsterseen"},
+						{"else":""},
+						{"say":"926"},
+						{"endif":""}
+]}],"hplovecraft":[{
+			"talkto":[
+						{"say,hplovecraft":"90"},
+						{"ifroomstatus,east_upperroad":"mansionlocked"},
+						{"call":"monsterseen"},
+						{"else":""},
+						{"say":"926"},
+						{"endif":""}
+]}],"esalgari":[{
+			"talkto":[
+						{"say,esalgari":"90"},
+						{"ifroomstatus,east_upperroad":"mansionlocked"},
+						{"call":"monsterseen"},
+						{"else":""},
+						{"say":"926"},
+						{"endif":""}
+]}]}],"onstatus_theresamonster":[{
+"eapoe":[{
+			"talkto":[
+						{"say,eapoe":"90"},
+						{"say":"927"},
+						{"say,eapoe":"928"},
+						{"say,eapoe":"929"},
+						{"say":"930"},
+						{"say,eapoe":"188"},
+						{"say":"931"},
+						{"say,eapoe":"932"},
+						{"learn":"timetalkrule1"},
+						{"say":"933"},
+						{"say,eapoe":"934"},
+						{"say":"935"},
+						{"say,eapoe":"936"}
+]}],"hplovecraft":[{
+			"talkto":[
+						{"say,hplovecraft":"90"},
+						{"say":"927"},
+						{"say,hplovecraft":"937"},
+						{"learn":"perceivehumans"}
+]}],"esalgari":[{
+			"talkto":[
+						{"ifknown":"monsterdefeated"},
+						{"say":"612"},
+						{"say,esalgari":"938"},
+						{"else":""},
+						{"say,esalgari":"90"},
+						{"say":"927"},
+						{"say,esalgari":"939"},
+						{"endif":""}
+]}]}],"_from":[{
+			"east_upperroad":[
+					{"enterfrom":"east_hotelhall"},
+					{"setleader,hplovecraft":"_"},
+					{"moveto,hplovecraft":"80"},
+					{"setroomstatus":"theresamonster"}
+]}]}],
+"east_hotelhall":[{
+			"desc":"155",
+"_":[{
+			"onconfig":[
+					{"setblock":"eapoe,foundauthors"},
+					{"setroomstatus":"start"},
+					{"call":"halltalkstart"}
+],			"onconfigupdate":[
+					{"ifknown":"fightstarted"},
+					{"ifroomstatus":"halfready"},
+					{"setroomstatus":"ready"},
+					{"endif":""},
+					{"endif":""}
+],			"onalert_foundauthors":[
+					{"call":"hallpoe"}
+],			"onmusic":[
+					{"playmusic":"east_mainloopfx"}
+]}],"onstatus_start":[{
+"eapoe":[{
+			"talkto":[
+						{"call":"hallpoe"}
+]}],"hplovecraft":[{
+			"talkto":[
+						{"call":"halltalkstop"},
+						{"say,hplovecraft,marco":"940"},
+						{"call":"halltalkstart"}
+]}],"guestregister":[{
+					"desc":"156",
+			"use":[
+						{"say,hplovecraft":"941"}
+]}]}],"onstatus_ready":[{
+"guestregister":[{
+					"desc":"156",
+			"use":[
+						{"playanim":"take"},
+						{"hideobj":"guestregister"},
+						{"setsuffix":"examine"},
+						{"say":"942"},
+						{"ifknown":"roddenberrywashere"},
+						{"say":"943"},
+						{"say":"944"},
+						{"showobj":"guestregister"},
+						{"setsuffix":"_"},
+						{"ifnottaken":"venicekey"},
+						{"say":"945"},
+						{"playanim":"take"},
+						{"take":"venicekey"},
+						{"endif":""},
+						{"else":""},
+						{"showobj":"guestregister"},
+						{"setsuffix":"_"},
+						{"endif":""}
+]}]}],"onstatus_halfready":[{
+"hplovecraft":[{
+			"talkto":[
+						{"newdialog":""},
+						{"addline,!once_127":"946"},
+{"learn":"once_127"},
+						{"say,hplovecraft,marco":"947"},
+						{"say":"188"},
+						{"say,hplovecraft":"948"},
+						{"say":"68"},
+						{"say,hplovecraft":"949"},
+						{"learn":"shouldhavearoom"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline,shouldhavearoom+!gotroom+ofelia":"950"},
+						{"say":"951"},
+						{"say,hplovecraft":"952"},
+						{"say":"953"},
+						{"say,hplovecraft":"954"},
+						{"moveto,marco":"hplovecraft"},
+						{"setanim,marco":"take"},
+						{"setanim,hplovecraft":"take"},
+						{"wait":"500"},
+						{"setanim,marco":"_"},
+						{"setanim,hplovecraft":"_"},
+						{"take":"ofeliakey"},
+						{"say":"20"},
+						{"learn":"gotroom"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline,shouldhavearoom+!gotroom+!ofelia":"955"},
+						{"say,hplovecraft,marco":"956"},
+						{"say":"957"},
+						{"say,hplovecraft":"734"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline,theyattackme":"627"},
+						{"say,hplovecraft,marco":"628"},
+						{"say":"629"},
+						{"say,hplovecraft":"630"},
+						{"say,hplovecraft":"631"},
+						{"say,hplovecraft":"632"},
+						{"say":"633"},
+						{"say,hplovecraft":"634"},
+						{"say":"635"},
+						{"say,hplovecraft":"64"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"622"},
+						{"say,rlstine":"623"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""}
+]}],"guestregister":[{
+					"desc":"156",
+			"use":[
+						{"say,hplovecraft":"941"}
+]}]}],"lostandfound":[{
+			"lookat":[
+					{"say":"958"}
+],			"use":[
+					{"say":"959"},
+					{"ifnottaken":"east_map"},
+					{"say":"960"},
+					{"playanim":"take"},
+					{"take":"east_map"},
+					{"else":""},
+					{"say":"961"},
+					{"endif":""},
+					{"ifknown":"shouldhavearoom+!once_128"},
+{"learn":"!once_128"},
+					{"say":"962"},
+					{"learn":"ofelia"},
+					{"else":""},
+					{"endif":""}
+]}],"calendar":[{
+			"lookat":[
+					{"say":"963"}
+],			"use":[
+					{"say":"964"}
+]}],"guestregister":[{
+}]}],
+"east_hotelroom1":[{
+			"desc":"160",
+"_":[{
+			"onmusic":[
+					{"playmusic":"east_mainloopfx"}
+]}],"crystalsneakers":[{
+			"use":[
+					{"ifnottaken":"crystalsneakers"},
+					{"playanim":"takelow"},
+					{"take":"crystalsneakers"},
+					{"hideobj":"crystalsneakers"},
+					{"say":"965"},
+					{"else":""},
+					{"say":"966"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"967"}
+]}]}],
+"east_hotelroom2":[{
+			"desc":"162",
+"newscreenplay":[{
+			"use":[
+					{"playanim":"takelow"},
+					{"take":"newscreenplay"},
+					{"hideobj":"newscreenplay"}
+],			"lookat":[
+					{"say":"968"}
+]}],"_":[{
+			"onmusic":[
+					{"playmusic":"east_mainloopfx"}
+]}]}],
+"east_lighthouse":[{
+			"desc":"64",
+"_":[{
+			"onconfigupdate":[
+					{"ifleader,jverne":"me"},
+					{"setleader,jverne":"_"},
+					{"endif":""}
+],			"onmusic":[
+					{"playmusic":"seaside"}
+]}],"_from":[{
+			"east_cave":[
+					{"setpos":"464,122"},
+					{"setpos,jverne":"480,122"},
+					{"amoveto,jverne":"340"},
+					{"moveto":"380"}
+]}],"jverne":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline,!once_129":"969"},
+{"learn":"once_129"},
+					{"say,jverne,marco":"970"},
+					{"say":"971"},
+					{"say,jverne":"972"},
+					{"say":"973"},
+					{"say,jverne":"974"},
+					{"learn":"recognizedverne"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,recognizedverne":"975"},
+					{"say,jverne,marco":"976"},
+					{"say":"862"},
+					{"say,jverne,marco":"863"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,monsterdefeated":"612"},
+					{"say,jverne":"977"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,theresamonster+!once_130+!monsterdefeated":"608"},
+{"learn":"!once_130"},
+					{"say,jverne":"978"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,collectauthors+recognizedverne+!once_131":"624"},
+{"learn":"!once_131"},
+					{"say,jverne,marco":"979"},
+					{"say":"232"},
+					{"say,jverne":"980"},
+					{"say":"64"},
+					{"learn":"boatworks"},
+					{"learn":"jverneadvised"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,boatworks+!once_132":"981"},
+{"learn":"!once_132"},
+					{"say,jverne":"982"},
+					{"say":"983"},
+					{"say,jverne":"984"},
+					{"say":"985"},
+					{"say,jverne":"986"},
+					{"say,jverne":"987"},
+					{"say":"988"},
+					{"say,jverne":"989"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"869"},
+					{"say,jverne":"384"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+],			"usewith_spyglass":[
+					{"drop":"spyglass"},
+					{"say,jverne":"990"},
+					{"amoveto,jverne":"651"},
+					{"moveto":"630"},
+					{"moveto,jverne":"651"},
+					{"faceto,jverne":"right,lock"},
+					{"setanim,jverne":"shoot"},
+					{"wait":"1250"},
+					{"setanim,jverne":"_"},
+					{"say,jverne":"726"},
+					{"say,jverne,marco":"991"},
+					{"say,jverne,marco":"992"},
+					{"learn":"theresacave"}
+]}],"boat":[{
+			"use":[
+					{"ifhave":"boatkey"},
+					{"ifknown":"theresacave"},
+					{"moveto":"boat"},
+					{"say":"993"},
+					{"say,jverne":"994"},
+					{"moveto,jverne":"me"},
+					{"setleader,jverne":"me"},
+					{"loadroom":"east_cave"},
+					{"else":""},
+					{"say":"995"},
+					{"endif":""},
+					{"else":""},
+					{"say":"996"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"997"},
+					{"ifnottaken":"boatkey"},
+					{"say":"998"},
+					{"endif":""}
+],			"usewith_boatkey":[
+					{"ifknown":"theresacave"},
+					{"moveto":"boat"},
+					{"say":"993"},
+					{"say,jverne":"994"},
+					{"moveto,jverne":"me"},
+					{"setleader,jverne":"me"},
+					{"loadroom":"east_cave"},
+					{"else":""},
+					{"say":"999"},
+					{"endif":""}
+]}]}],
+"east_luigiroom":[{
+			"desc":"163",
+"_":[{
+			"onconfig":[
+					{"setroomstatus":"luigiunconvinced"}
+],			"onentershow":[
+					{"ifroom,eapoe":"here"},
+					{"else":""},
+					{"setroom,eapoe":"here,-40"},
+					{"setroom,hplovecraft":"here,-50"},
+					{"amoveto,eapoe":"90"},
+					{"amoveto,hplovecraft":"70"},
+					{"moveto":"110"},
+					{"say,luigi,marco":"1000"},
+					{"say,luigi,eapoe":"1001"},
+					{"endif":""}
+],			"onmusic":[
+					{"playmusic":"intro_poe"}
+]}],"luigi":[{
+			"lookat":[
+					{"say":"1002"}
+],			"usewith_diary":[
+					{"say,luigi,marco":"1003"},
+					{"reach":"luigi"},
+					{"reach,eapoe":"marco"},
+					{"reach,hplovecraft":"marco-20"},
+					{"say,marco,luigi":"1004"},
+					{"say,luigi":"1005"},
+					{"moveto,luigi":"luigison"},
+					{"reach":"luigi"},
+					{"say,luigi":"1006"},
+					{"say,luigi,marco":"1007"},
+					{"say,marco,luigi":"1008"},
+					{"moveto,me":"luigi"},
+					{"setanim,me":"take"},
+					{"setanim,luigi":"take"},
+					{"wait":"500"},
+					{"setanim,me":"_"},
+					{"setanim,luigi":"_"},
+					{"drop":"diary"},
+					{"setsuffix,luigi":"examine"},
+					{"say,luigi":"1009"},
+					{"setsuffix,luigi":"_"},
+					{"say,luigi":"1010"},
+					{"reach,eapoe":"marco"},
+					{"say,eapoe,luigi":"1011"},
+					{"say,luigi,eapoe":"1012"},
+					{"say,marco,luigi":"1013"},
+					{"setsuffix,luigi":"examine"},
+					{"say,luigi,marco":"1014"},
+					{"setsuffix,luigi":"_"},
+					{"say,luigi,marco":"1015"},
+					{"moveto,luigi":"luigison"},
+					{"reach":"luigi"},
+					{"say,luigi,marco":"1016"},
+					{"reach,hplovecraft":"marco-20"},
+					{"say,hplovecraft,luigi":"1017"},
+					{"say,luigi,hplovecraft":"1018"},
+					{"say,hplovecraft":"1019"},
+					{"say,hplovecraft":"1020"},
+					{"say,luigi,marco":"1021"},
+					{"setroomstatus":"luigiaccepted"}
+],			"usewith_jar":[
+					{"ifstatus":"jar,plantfilled"},
+					{"say,luigi":"1022"},
+					{"drop":"jar"},
+					{"say,luigi,marco":"1023"},
+					{"say,luigi,marco":"1024"},
+					{"say,luigi,eapoe":"1025"},
+					{"say,luigi,eapoe":"1026"},
+					{"say,eapoe,luigi":"1027"},
+					{"say":"1028"},
+					{"say,luigi":"1029"},
+					{"say,marco,luigi":"1030"},
+					{"say,hplovecraft":"1031"},
+					{"moveto":"100"},
+					{"loadroom":"epilogue_title"},
+					{"else":""},
+					{"ifstatus":"jar,pearlfilled"},
+					{"say,luigi":"1032"},
+					{"say,luigi":"1033"},
+					{"else":""},
+					{"say,luigi":"1034"},
+					{"learn":"needlure"},
+					{"endif":""},
+					{"endif":""}
+]}],"luigison":[{
+			"lookat":[
+					{"say":"1035"}
+],			"usewith_all":[
+					{"say,luigi":"1036"}
+],			"usewith_curryoil":[
+					{"reach":"luigison"},
+					{"playanim":"take"},
+					{"say":"1037"},
+					{"say,luigi":"1036"}
+],			"talkto":[
+					{"say":"85"},
+					{"say,luigi,marco":"1036"},
+					{"say,eapoe,luigi":"1038"}
+]}],"luigiwife":[{
+			"lookat":[
+					{"say":"1039"}
+],			"usewith_all":[
+					{"say,luigi":"1040"}
+],			"talkto":[
+					{"say":"85"},
+					{"say,luigi,marco":"1040"},
+					{"say,eapoe,luigi":"1041"}
+],			"usewith_curryoil":[
+					{"reach":"luigiwife"},
+					{"playanim":"take"},
+					{"say":"1042"},
+					{"say,luigi":"1040"}
+]}],"onstatus_luigiunconvinced":[{
+"plant":[{
+			"lookat":[
+						{"say":"1043"}
+],			"usewith_all":[
+						{"say,luigi":"1044"}
+],			"use":[
+						{"say,luigi":"1044"}
+]}],"eapoe":[{
+			"talkto":[
+						{"newdialog":""},
+						{"addline":"927"},
+						{"say,eapoe":"1045"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"384"},
+						{"say,eapoe":"384"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""}
+]}],"hplovecraft":[{
+			"talkto":[
+						{"newdialog":""},
+						{"addline":"927"},
+						{"say,hplovecraft":"1046"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"384"},
+						{"say,hplovecraft":"384"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""}
+]}],"luigi":[{
+			"talkto":[
+						{"newdialog":""},
+						{"addline":"1047"},
+						{"say,luigi":"1048"},
+						{"say,luigi":"1049"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"1050"},
+						{"say,luigi":"1051"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""}
+]}]}],"onstatus_luigiaccepted":[{
+"plant":[{
+			"lookat":[
+						{"say":"1043"}
+],			"usewith_jar":[
+						{"ifstatus":"jar,pearlfilled"},
+						{"reach":"plant"},
+						{"setanim":"take"},
+						{"setstatus":"plant,open"},
+						{"wait":"500"},
+						{"setstatus":"plant,tentacle"},
+						{"setanim":"_"},
+						{"say":"1052"},
+						{"wait":"500"},
+						{"say":"1053"},
+						{"learn":"needsaw"},
+						{"else":""},
+						{"ifstatus":"jar,plantfilled"},
+						{"say":"1054"},
+						{"else":""},
+						{"say":"1055"},
+						{"endif":""},
+						{"endif":""}
+],			"usewith_saw":[
+						{"ifstatus":"plant,tentacle"},
+						{"ifstatus":"saw,oiled"},
+						{"playanim":"take"},
+						{"say":"1056"},
+						{"setstatus":"jar,plantfilled"},
+						{"setstatus":"plant,tentaclecut"},
+						{"say":"1057"},
+						{"else":""},
+						{"playanim":"take"},
+						{"say":"1058"},
+						{"endif":""},
+						{"else":""},
+						{"ifstatus":"plant,tentaclecut"},
+						{"say":"1059"},
+						{"else":""},
+						{"say":"1060"},
+						{"endif":""},
+						{"endif":""}
+],			"use":[
+						{"say":"1061"}
+],			"usewith_awl":[
+						{"say":"1062"}
+],			"usewith_curryoil":[
+						{"say":"1063"}
+]}],"eapoe":[{
+			"talkto":[
+						{"newdialog":""},
+						{"addline":"927"},
+						{"say,eapoe":"1064"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"384"},
+						{"say,eapoe":"384"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""}
+]}],"hplovecraft":[{
+			"talkto":[
+						{"newdialog":""},
+						{"addline":"927"},
+						{"say,hplovecraft":"1065"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"384"},
+						{"say,hplovecraft":"384"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""}
+]}],"luigi":[{
+			"talkto":[
+						{"newdialog":""},
+						{"addline":"1066"},
+						{"say":"1067"},
+						{"say,luigi":"1068"},
+						{"say":"1069"},
+						{"say,luigi":"1070"},
+						{"say":"1071"},
+						{"moveto,luigi":"plant"},
+						{"say,luigi":"1072"},
+						{"say,luigi,marco":"1073"},
+						{"say,marco,luigi":"1074"},
+						{"say,luigi,marco":"1075"},
+						{"playdialog":""},
+						{"endadd":""},
+						{"addline":"384"},
+						{"say,luigi":"384"},
+						{"deletedialog":""},
+						{"endadd":""},
+						{"playdialog":""}
+]}]}]}],
+"east_mcorridor":[{
+			"desc":"148",
+"_":[{
+			"onconfig":[
+					{"setblock":"plantcheckpoint,checkpoint"},
+					{"setstatus":"plantcheckpoint,closed"}
+],			"onalert_checkpoint":[
+					{"say":"1076"},
+					{"ifonce":"once_135"},
+					{"say,eapoe":"1077"},
+					{"say,luigi":"1078"},
+					{"say,hplovecraft":"1079"},
+					{"say,luigi":"1051"},
+					{"endif":""}
+],			"onentershow":[
+					{"ifonce":"once_138"},
+					{"amoveto,eapoe":"310"},
+					{"amoveto,hplovecraft":"270"},
+					{"moveto":"325"},
+					{"say":"1080"},
+					{"endif":""}
+],			"onmusic":[
+					{"playmusic":"intro_poe"}
+]}],"plantcheckpoint":[{
+			"usewith_all":[
+					{"say":"1081"}
+],			"usewith_guidohand":[
+					{"reach":"plantcheckpoint"},
+					{"faceto":"plantcheckpoint"},
+					{"playanim":"take"},
+					{"say":"1082"},
+					{"setstatus":"plantcheckpoint,open"},
+					{"unsetblock":"plantcheckpoint"}
+],			"use":[
+					{"say":"378"}
+],			"usewith_awl":[
+					{"reach":"plantcheckpoint"},
+					{"playanim":"take"},
+					{"say":"1083"}
+],			"usewith_saw":[
+					{"reach":"plantcheckpoint"},
+					{"playanim":"take"},
+					{"say,luigi":"1084"},
+					{"say,marco,eapoe":"1085"},
+					{"say,eapoe":"1086"}
+],			"usewith_curryoil":[
+					{"reach":"plantcheckpoint"},
+					{"playanim":"take"},
+					{"say":"1087"}
+]}],"east_upperroad":[{
+			"moveto":[
+					{"setleader,eapoe":"_"},
+					{"setleader,hplovecraft":"_"},
+					{"loadroom":"east_upperroad"}
+]}],"eapoe":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline":"927"},
+					{"say,eapoe":"1088"},
+					{"learn":"needsimulacro"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,needsimulacro":"1089"},
+					{"say,eapoe":"1090"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"384"},
+					{"say,eapoe":"384"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+],			"usewith_guidohand":[
+					{"say":"1091"},
+					{"say,eapoe":"1092"},
+					{"say":"1093"},
+					{"say,eapoe":"1094"}
+]}],"hplovecraft":[{
+			"talkto":[
+					{"newdialog":""},
+					{"addline":"927"},
+					{"say,hplovecraft":"1095"},
+					{"say":"1096"},
+					{"say,hplovecraft":"1097"},
+					{"learn":"usetheforce"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,usetheforce":"1098"},
+					{"say,hplovecraft":"1099"},
+					{"learn":"needsaw"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"384"},
+					{"say,hplovecraft":"384"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""}
+],			"usewith_guidohand":[
+					{"say":"1091"},
+					{"say,hplovecraft":"1092"},
+					{"say":"1100"},
+					{"say,hplovecraft":"1101"},
+					{"say":"1102"},
+					{"say,hplovecraft":"1103"},
+					{"say":"1104"},
+					{"say,hplovecraft":"1105"}
+]}]}],
+"east_submarine":[{
+			"desc":"171",
+"_":[{
+			"onmusic":[
+					{"playmusic":"cave"}
+]}],"container":[{
+			"lookat":[
+					{"say":"1106"}
+],			"use":[
+					{"ifnottaken":"jar"},
+					{"playanim":"takelow"},
+					{"take":"jar"},
+					{"hideobj":"container"},
+					{"say":"491"},
+					{"else":""},
+					{"say":"1107"},
+					{"endif":""}
+]}],"screen1":[{
+			"lookat":[
+					{"say":"1108"},
+					{"say,jverne":"1109"}
+],			"use":[
+					{"say":"1110"}
+]}],"screen2":[{
+			"lookat":[
+					{"say":"1111"}
+],			"use":[
+					{"say":"1110"}
+]}],"panel":[{
+			"lookat":[
+					{"say":"1112"}
+],			"use":[
+					{"say":"1113"}
+]}],"containers":[{
+			"lookat":[
+					{"say":"1106"}
+],			"use":[
+					{"ifnottaken":"jar"},
+					{"playanim":"takelow"},
+					{"take":"jar"},
+					{"hideobj":"container"},
+					{"say":"491"},
+					{"else":""},
+					{"say":"1107"},
+					{"endif":""}
+]}],"east_map":[{
+			"use":[
+					{"say":"1114"}
+]}]}],
+"east_trekcon":[{
+			"desc":"175",
+"_":[{
+			"onconfig":[
+					{"call":"trekcontalkstart"}
+],			"onmusic":[
+					{"playmusic":"east_mainloopfast"}
+]}],"spyglass":[{
+			"use":[
+					{"call":"trekcontalkstop"},
+					{"say,trekker2":"1115"},
+					{"ifhave":"newscreenplay"},
+					{"say":"1116"},
+					{"say,trekker2":"1117"},
+					{"say":"1118"},
+					{"moveto":"trekker2"},
+					{"playanim":"give"},
+					{"drop":"newscreenplay"},
+					{"say,trekker2":"1119"},
+					{"say":"1120"},
+					{"say,trekker2":"1121"},
+					{"say":"1122"},
+					{"moveto,trekker2":"spyglass"},
+					{"playanim,trekker2":"takehi"},
+					{"hideobj":"spyglass"},
+					{"moveto,trekker2":"marco"},
+					{"playanim,trekker2":"give"},
+					{"take":"spyglass"},
+					{"say,trekker2":"1123"},
+					{"else":""},
+					{"say":"1124"},
+					{"say,trekker2":"1125"},
+					{"say":"1126"},
+					{"say,trekker2":"1127"},
+					{"endif":""},
+					{"call":"trekcontalkstart"}
+],			"lookat":[
+					{"say":"1128"}
+]}],"ussenterprise":[{
+			"use":[
+					{"call":"trekcontalkstop"},
+					{"faceto,trekker2":"marco"},
+					{"say,trekker2":"1129"},
+					{"call":"trekcontalkstart"}
+],			"lookat":[
+					{"say":"1130"}
+]}],"screenplay":[{
+			"use":[
+					{"call":"trekcontalkstop"},
+					{"faceto,trekker1":"marco"},
+					{"say,trekker1":"1129"},
+					{"call":"trekcontalkstart"}
+],			"lookat":[
+					{"say":"1131"},
+					{"learn":"roddenberrywashere"}
+]}],"grrmartin":[{
+			"talkto":[
+					{"call":"trekcontalkstop"},
+					{"faceto,grrmartin":"marco"},
+					{"newdialog":""},
+					{"addline,collectauthors+!once_139":"624"},
+{"learn":"!once_139"},
+					{"say,grrmartin":"1132"},
+					{"say":"1133"},
+					{"say,grrmartin":"1134"},
+					{"say":"1135"},
+					{"learn":"grrmartinadvised"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,theyattackme":"627"},
+					{"say,grrmartin,marco":"628"},
+					{"say":"629"},
+					{"say,grrmartin":"630"},
+					{"say,grrmartin":"631"},
+					{"say,grrmartin":"632"},
+					{"say":"633"},
+					{"say,grrmartin":"634"},
+					{"say":"635"},
+					{"say,grrmartin":"64"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"1136"},
+					{"say,grrmartin":"1137"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"622"},
+					{"say,grrmartin":"1138"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""},
+					{"call":"trekcontalkstart"}
+]}],"trekker1":[{
+			"talkto":[
+					{"call":"trekcontalkstop"},
+					{"faceto,trekker1":"marco"},
+					{"newdialog":""},
+					{"addline,theresamonster+!once_140+!monsterdefeated":"608"},
+{"learn":"!once_140"},
+					{"say,trekker1":"764"},
+					{"say":"765"},
+					{"say,trekker1":"766"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!once_141":"767"},
+{"learn":"once_141"},
+					{"say,trekker1":"768"},
+					{"say":"769"},
+					{"say,trekker1":"770"},
+					{"ifonce":"once_144"},
+					{"say":"771"},
+					{"say,trekker1":"772"},
+					{"say":"773"},
+					{"say,trekker1":"774"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"775"},
+					{"say,trekker1":"776"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"777"},
+					{"say,trekker1":"778"},
+					{"ifknown":"fightstarted"},
+					{"say,trekker1":"779"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"780"},
+					{"say,trekker1":"781"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""},
+					{"call":"trekcontalkstart"}
+],			"usewith_newscreenplay":[
+					{"say":"1116"},
+					{"say,trekker1":"1117"},
+					{"say":"1118"},
+					{"moveto":"trekker1"},
+					{"playanim":"give"},
+					{"drop":"newscreenplay"},
+					{"say,trekker1":"1119"},
+					{"say":"1120"},
+					{"say,trekker1":"1121"},
+					{"say":"1122"},
+					{"moveto,trekker1":"spyglass"},
+					{"playanim,trekker1":"takehi"},
+					{"hideobj":"spyglass"},
+					{"moveto,trekker1":"marco"},
+					{"playanim,trekker1":"give"},
+					{"take":"spyglass"},
+					{"say,trekker1":"1123"}
+]}],"trekker2":[{
+			"talkto":[
+					{"call":"trekcontalkstop"},
+					{"faceto,trekker2":"marco"},
+					{"newdialog":""},
+					{"addline,theresamonster+!once_145+!monsterdefeated":"608"},
+{"learn":"!once_145"},
+					{"say,trekker2":"764"},
+					{"say":"765"},
+					{"say,trekker2":"766"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline,!once_146":"767"},
+{"learn":"once_146"},
+					{"say,trekker2":"768"},
+					{"say":"769"},
+					{"say,trekker2":"770"},
+					{"ifonce":"once_149"},
+					{"say":"771"},
+					{"say,trekker2":"772"},
+					{"say":"773"},
+					{"say,trekker2":"774"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"775"},
+					{"say,trekker2":"776"},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"777"},
+					{"say,trekker2":"778"},
+					{"ifknown":"fightstarted"},
+					{"say,trekker2":"779"},
+					{"endif":""},
+					{"playdialog":""},
+					{"endadd":""},
+					{"addline":"780"},
+					{"say,trekker2":"781"},
+					{"deletedialog":""},
+					{"endadd":""},
+					{"playdialog":""},
+					{"call":"trekcontalkstart"}
+],			"usewith_newscreenplay":[
+					{"say":"1116"},
+					{"say,trekker2":"1117"},
+					{"say":"1118"},
+					{"moveto":"trekker2"},
+					{"playanim":"give"},
+					{"drop":"newscreenplay"},
+					{"say,trekker2":"1119"},
+					{"say":"1120"},
+					{"say,trekker2":"1121"},
+					{"say":"1122"},
+					{"moveto,trekker2":"spyglass"},
+					{"playanim,trekker2":"takehi"},
+					{"hideobj":"spyglass"},
+					{"moveto,trekker2":"marco"},
+					{"playanim,trekker2":"give"},
+					{"take":"spyglass"},
+					{"say,trekker2":"1123"}
+]}]}],
+"east_upperroad":[{
+			"desc":"97",
+"_":[{
+			"onconfig":[
+					{"setroomstatus":"mansionlocked"},
+					{"setblock":"plantmonster,monsterblock"},
+					{"setstatus":"plantmonster,live"}
+],			"onentershow":[
+					{"ifonce":"once_152"},
+					{"setstatus":"plantmonster,live"},
+					{"say":"1139"},
+					{"learn":"theresamonster"},
+					{"endif":""}
+],			"onalert_monsterblock":[
+					{"say,#C0C0C0":"1140"},
+					{"wait":"500"},
+					{"say":"1141"}
+],			"onmusic":[
+					{"ifroomstatus":"mansionlocked"},
+					{"playmusic":"east_harbourmonster"},
+					{"else":""},
+					{"playmusic":"east_harbour"},
+					{"endif":""}
+]}],"onstatus_mansionlocked":[{
+"east_mcorridor":[{
+					"desc":"66",
+			"moveto":[
+						{"loadroom":"east_mcorridor"}
+]}],"plantmonster":[{
+					"desc":"181",
+			"usewith_awl":[
+						{"say":"1142"}
+],			"usewith_feather":[
+						{"say":"1143"}
+],			"use":[
+						{"say":"1144"}
+],			"usewith_all":[
+						{"say":"1145"}
+],			"usewith_curryleaves":[
+						{"say":"1146"}
+],			"usewith_curryoil":[
+						{"say":"1147"}
+],			"lookat":[
+						{"say":"1148"}
+]}],"puppet":[{
+			"talkto":[
+						{"moveto":"430"},
+						{"moveto":"410"},
+						{"say":"1149"},
+						{"setleader,puppet":"_"},
+						{"moveto,puppet":"160"},
+						{"ifstatus":"puppet,full"},
+						{"setstatus":"plantmonster,sleep"},
+						{"playmusic":"east_harbour"},
+						{"say":"1150"},
+						{"learn":"monsterdefeated"},
+						{"setroomstatus":"mansionunlocked"},
+						{"unsetblock":"plantmonster"},
+						{"else":""},
+						{"say":"1151"},
+						{"setleader,puppet":"me"},
+						{"endif":""}
+]}]}],"onstatus_mansionunlocked":[{
+"east_mcorridor":[{
+					"desc":"66",
+			"moveto":[
+						{"ifroom,eapoe":"east_hotellounge"},
+						{"say":"1152"},
+						{"setroom,eapoe":"east_mcorridor,-40"},
+						{"setroom,hplovecraft":"east_mcorridor,-60"},
+						{"endif":""},
+						{"loadroom":"east_mcorridor"}
+]}],"plantmonster":[{
+					"desc":"181",
+			"lookat":[
+						{"say":"1153"}
+],			"usewith_all":[
+						{"say":"1154"}
+],			"use":[
+						{"say":"1154"}
+]}],"puppet":[{
+			"talkto":[
+						{"say":"1155"}
+]}]}],"plantmonster":[{
+}],"capitanodead":[{
+			"use":[
+					{"ifnottaken":"feather"},
+					{"say":"1156"},
+					{"say":"1157"},
+					{"playanim":"takelow"},
+					{"take":"feather"},
+					{"hideobj":"feather"},
+					{"else":""},
+					{"say":"1158"},
+					{"endif":""}
+],			"lookat":[
+					{"say":"1159"}
+]}],"feather":[{
+			"use":[
+					{"playanim":"takelow"},
+					{"take":"feather"},
+					{"hideobj":"feather"}
+]}],"_from":[{
+			"east_hotellounge":[
+					{"enterfrom":"east_downtown"},
+					{"setleader,hplovecraft":"_"},
+					{"say,hplovecraft":"1160"},
+					{"say":"1161"},
+					{"say,hplovecraft":"1162"},
+					{"say":"1163"},
+					{"say,hplovecraft":"1164"},
+					{"moveto,hplovecraft":"360"},
+					{"faceto,hplovecraft":"left,lock"},
+					{"say,#C0C0C0":"1140"},
+					{"faceto,hplovecraft":"left,lock"},
+					{"playanim,hplovecraft":"give"},
+					{"wait":"400"},
+					{"say,hplovecraft,marco":"1165"},
+					{"say,hplovecraft":"1166"},
+					{"wait":"1000"},
+					{"setleader,hplovecraft":"me"},
+					{"loadroom":"east_hotellounge"}
+],			"east_downtown":[
+					{"enterfrom":"east_downtown"}
+],			"east_carpentry":[
+					{"enterfrom":"east_downtown"}
+],			"east_fpathwest":[
+					{"enterfrom":"east_downtown"}
+],			"east_fromdhanhouse":[
+					{"enterfrom":"east_downtown"}
+				]
+			}]
+		}]
+	}]
+}
